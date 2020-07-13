@@ -1,4 +1,51 @@
 *** Keywords ***
+#Validate Locations
+#    [Arguments]   ${Region}
+#    Mouse Over    ${Network_Link_Locator}
+#    Validate Element    ${${Region}_Link_Locator}    PASSED :: ${Region} link is displayed in Services.    FAILED :: ${Region} link is not displayed in Services.
+#    Wait And Click      ${${Region}_Link_Locator}
+#    Validate Common Features
+#    ${Title}    Get Title
+#    Run Keyword If    '${${Region}_PageTitle}'=='${Title}'   Log To Console   PASSED :: ${Region} page title is displayed correctly.   ELSE    Fail   FAILED :: ${Region} page title should be "${${Region}_PageTitle}" but it was "${Title}".
+#    Validate Element    ${${Region}_Header_Locator}   PASSED :: Header ${Region} is displayed.    FAILED :: Header ${Region} is not displayed.
+#    ${i}   Set Variable   0
+#    FOR   ${Location}   IN    @{${Region}_LocationList}
+#        ${Quotient}    Evaluate   ${i}/4
+#        ${ScrollIndex}   Evaluate   ${i}-3
+#        Run Keyword If    ${i}%4==0 and ${i}!=0    Scroll To Element   (//h6/../..)[${ScrollIndex}]    true
+#        ${Xpath}    Replace Variables    //h6/a[@title='${Location}']
+#        Validate Element    ${Xpath}    PASSED :: Location "${Location}" is displayed in ${Region} page.    FAILED :: Location "${Location}" is not displayed in ${Region} page.
+#        Sleep    1
+#        Wait And Click      ${Xpath}
+#        Sleep    1
+#        Select Window       NEW
+#        Validate Common Features
+#        ${Title}   Get Title
+#        Run Keyword If    '${PageTitle_${Location}}'=='${Title}'   Log To Console   PASSED :: ${Region} >> ${Location} page title is displayed correctly.   ELSE    Fail   FAILED :: ${Region} >> ${Location} page title should be "${PageTitle_${Location}}" but it was "${Title}".
+#        Validate Element    //div[@class="g5plus-heading style1 text-left color-dark"]/h2[contains(text(),'${Header_${Location}}')]    PASSED :: Header ${Header_${Location}} is displayed ${Region} >> ${Location} page.    FAILED :: Header ${Header_${Location}} is not displayed ${Region} >> ${Location} page.
+#        Validate Element    //h6[text()='${Name_Header_${Location}}']    PASSED :: Header "${Name_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${Name_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
+#        Validate Content Contains   ${Name_Value_${Location}}   PASSED :: Name is displayed correctly in ${Region} >> ${Location} page.   FAILED :: Name "${Name_Value_${Location}}" is not displayed in ${Region} >> ${Location} page.
+#        Validate Element    //h6[text()='${AddressDetails_Header_${Location}}']    PASSED :: Header "${AddressDetails_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${AddressDetails_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
+#        ${AddressValue}    Get Text    //h6[text()='${AddressDetails_Header_${Location}}']/following-sibling::p
+#        @{AddressValue_List}   Split To Lines    ${AddressValue}
+#        Compare Lists    ${AddressValue_List}    ${AddressDetails_Value_${Location}}    PASSED :: Address line is displayed correctly in ${Region} >> ${Location}.   FAILED :: Address line is not displayed in ${Region} >> ${Location}
+#        Validate Element    //h6[text()='${Phone_Numbers_Header_${Location}}']    PASSED :: Header "${Phone_Numbers_Header_${Location}}" is displayed.    FAILED :: Header "${Phone_Numbers_Header_${Location}}" is not displayed.
+#        ${PhoneValue}    Get Text    //h6[text()='${Phone_Numbers_Header_${Location}}']/following-sibling::p
+#        @{PhoneValue_List}   Split To Lines    ${PhoneValue}
+#        Compare Lists    ${PhoneValue_List}    ${Phone_Numbers_Value_${Location}}    PASSED :: Phone number is displayed correctly in ${Region} >> ${Location}.   FAILED :: Phone number is not displayed in ${Region} >> ${Location}
+#        Validate Element    //h6[text()='${EmailAddress_Header_${Location}}']    PASSED :: Header "${EmailAddress_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${EmailAddress_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
+#        Validate Content    ${EmailAddress_Value_${Location}}   PASSED :: Email is displayed correctly in ${Region} >> ${Location} page.   FAILED :: Name "${Name_Value_${Location}}" is not displayed in ${Region} >> ${Location} page.
+#        Validate Element    //h6[text()='${City_Header_${Location}}']    PASSED :: Header "${Name_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${Name_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
+#        Validate Element    //p[text()='${City_Value_${Location}}']   PASSED :: City "${City_Value_${Location}}" is displayed correctly in ${Region} >> ${Location} page.   FAILED :: City "${City_Value_${Location}}" is not displayed in ${Region} >> ${Location} page.
+#        Validate Element    ${CityEconomy_Header_Locator}    PASSED :: Header ECONOMY OF THE CITY is displayed in ${Region} >> ${Location} page.   FAILED :: Header ECONOMY OF THE CITY is not displayed in ${Region} >> ${Location} page.
+#        ${CityEconomyContent}    Get Text    ${CityEconomy_Content_Locator}
+#        @{CityEconomyContent_List}   Split To Lines   ${CityEconomyContent}
+#        Compare Lists   ${CityEconomyContent_List}   ${Economy_${Location}}   PASSED :: Economy Of The City content is displayed correctly in ${Region} >> ${Location} page.   FAILED :: Economy Of The City content is not displayed correctly in ${Region} >> ${Location} page
+#        Close Window
+#        Select Window       MAIN
+#        ${i}   Evaluate   ${i}+1
+#    END
+
 Validate Locations
     [Arguments]   ${Region}
     Mouse Over    ${Network_Link_Locator}
@@ -9,6 +56,7 @@ Validate Locations
     Run Keyword If    '${${Region}_PageTitle}'=='${Title}'   Log To Console   PASSED :: ${Region} page title is displayed correctly.   ELSE    Fail   FAILED :: ${Region} page title should be "${${Region}_PageTitle}" but it was "${Title}".
     Validate Element    ${${Region}_Header_Locator}   PASSED :: Header ${Region} is displayed.    FAILED :: Header ${Region} is not displayed.
     ${i}   Set Variable   0
+    Set Test Variable    ${i}   ${i}
     FOR   ${Location}   IN    @{${Region}_LocationList}
         ${Quotient}    Evaluate   ${i}/4
         ${ScrollIndex}   Evaluate   ${i}-3
@@ -20,31 +68,67 @@ Validate Locations
         Sleep    1
         Select Window       NEW
         Validate Common Features
-        ${Title}   Get Title
-        Run Keyword If    '${PageTitle_${Location}}'=='${Title}'   Log To Console   PASSED :: ${Region} >> ${Location} page title is displayed correctly.   ELSE    Fail   FAILED :: ${Region} >> ${Location} page title should be "${PageTitle_${Location}}" but it was "${Title}".
-        Validate Element    //div[@class="g5plus-heading style1 text-left color-dark"]/h2[contains(text(),'${Header_${Location}}')]    PASSED :: Header ${Header_${Location}} is displayed ${Region} >> ${Location} page.    FAILED :: Header ${Header_${Location}} is not displayed ${Region} >> ${Location} page.
-        Validate Element    //h6[text()='${Name_Header_${Location}}']    PASSED :: Header "${Name_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${Name_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
-        Validate Content Contains   ${Name_Value_${Location}}   PASSED :: Name is displayed correctly in ${Region} >> ${Location} page.   FAILED :: Name "${Name_Value_${Location}}" is not displayed in ${Region} >> ${Location} page.
-        Validate Element    //h6[text()='${AddressDetails_Header_${Location}}']    PASSED :: Header "${AddressDetails_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${AddressDetails_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
-        ${AddressValue}    Get Text    //h6[text()='${AddressDetails_Header_${Location}}']/following-sibling::p
-        @{AddressValue_List}   Split To Lines    ${AddressValue}
-        Compare Lists    ${AddressValue_List}    ${AddressDetails_Value_${Location}}    PASSED :: Address line is displayed correctly in ${Region} >> ${Location}.   FAILED :: Address line is not displayed in ${Region} >> ${Location}
-        Validate Element    //h6[text()='${Phone_Numbers_Header_${Location}}']    PASSED :: Header "${Phone_Numbers_Header_${Location}}" is displayed.    FAILED :: Header "${Phone_Numbers_Header_${Location}}" is not displayed.
-        ${PhoneValue}    Get Text    //h6[text()='${Phone_Numbers_Header_${Location}}']/following-sibling::p
-        @{PhoneValue_List}   Split To Lines    ${PhoneValue}
-        Compare Lists    ${PhoneValue_List}    ${Phone_Numbers_Value_${Location}}    PASSED :: Phone number is displayed correctly in ${Region} >> ${Location}.   FAILED :: Phone number is not displayed in ${Region} >> ${Location}
-        Validate Element    //h6[text()='${EmailAddress_Header_${Location}}']    PASSED :: Header "${EmailAddress_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${EmailAddress_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
-        Validate Content    ${EmailAddress_Value_${Location}}   PASSED :: Email is displayed correctly in ${Region} >> ${Location} page.   FAILED :: Name "${Name_Value_${Location}}" is not displayed in ${Region} >> ${Location} page.
-        Validate Element    //h6[text()='${City_Header_${Location}}']    PASSED :: Header "${Name_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${Name_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
-        Validate Element    //p[text()='${City_Value_${Location}}']   PASSED :: City "${City_Value_${Location}}" is displayed correctly in ${Region} >> ${Location} page.   FAILED :: City "${City_Value_${Location}}" is not displayed in ${Region} >> ${Location} page.
-        Validate Element    ${CityEconomy_Header_Locator}    PASSED :: Header ECONOMY OF THE CITY is displayed in ${Region} >> ${Location} page.   FAILED :: Header ECONOMY OF THE CITY is not displayed in ${Region} >> ${Location} page.
-        ${CityEconomyContent}    Get Text    ${CityEconomy_Content_Locator}
-        @{CityEconomyContent_List}   Split To Lines   ${CityEconomyContent}
-        Compare Lists   ${CityEconomyContent_List}   ${Economy_${Location}}   PASSED :: Economy Of The City content is displayed correctly in ${Region} >> ${Location} page.   FAILED :: Economy Of The City content is not displayed correctly in ${Region} >> ${Location} page
-        Close Window
-        Select Window       MAIN
-        ${i}   Evaluate   ${i}+1
+        ${Status}    Run Keyword And Return Status    Wait Until Element Is Visible   (//h6/a)[1]   1
+        Set Test Variable    ${Status}   ${Status}
+        Run Keyword If   ${Status}   Validate Sub Locations    ${Location}   ELSE    Validate Location Page   ${Location}   ${Region}
     END
+
+Validate Sub Locations
+    [Arguments]   ${Region}
+    Validate Common Features
+    ${Title}    Get Title
+    Run Keyword If    '${${Region}_PageTitle}'=='${Title}'   Log To Console   PASSED :: ${Region} page title is displayed correctly.   ELSE    Fail   FAILED :: ${Region} page title should be "${${Region}_PageTitle}" but it was "${Title}".
+    Validate Element    ${${Region}_Header_Locator}   PASSED :: Header ${Region} is displayed.    FAILED :: Header ${Region} is not displayed.
+
+
+
+#    ${i}   Set Variable   0
+#    Set Test Variable    ${i}   ${i}
+    FOR   ${Location}   IN    @{${Region}_LocationList}
+#        ${Quotient}    Evaluate   ${i}/4
+#        ${ScrollIndex}   Evaluate   ${i}-3
+#        Run Keyword If    ${i}%4==0 and ${i}!=0    Scroll To Element   (//h6/../..)[${ScrollIndex}]    true
+        ${Xpath}    Replace Variables    //h6/a[@title='${Location}']
+        Validate Element    ${Xpath}    PASSED :: Location "${Location}" is displayed in ${Region} page.    FAILED :: Location "${Location}" is not displayed in ${Region} page.
+        Sleep    1
+        Wait And Click      ${Xpath}
+        Sleep    1
+        Select Window       NEW
+        Validate Location Page   ${Location}   ${Region}
+    END
+    Close Window
+    ${Wondows}        Get Window Handles
+    Select Window       ${Wondows}[-1]
+
+Validate Location Page
+    [Arguments]   ${Location}   ${Region}
+    Validate Common Features
+    ${Title}   Get Title
+    Run Keyword If    '${PageTitle_${Location}}'=='${Title}'   Log To Console   PASSED :: ${Region} >> ${Location} page title is displayed correctly.   ELSE    Fail   FAILED :: ${Region} >> ${Location} page title should be "${PageTitle_${Location}}" but it was "${Title}".
+    Validate Element    //div[@class="g5plus-heading style1 text-left color-dark"]/h2[contains(text(),'${Header_${Location}}')]    PASSED :: Header ${Header_${Location}} is displayed ${Region} >> ${Location} page.    FAILED :: Header ${Header_${Location}} is not displayed ${Region} >> ${Location} page.
+    Validate Element    //h6[text()='${Name_Header_${Location}}']    PASSED :: Header "${Name_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${Name_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
+    Validate Content Contains   ${Name_Value_${Location}}   PASSED :: Name is displayed correctly in ${Region} >> ${Location} page.   FAILED :: Name "${Name_Value_${Location}}" is not displayed in ${Region} >> ${Location} page.
+    Validate Element    //h6[text()='${AddressDetails_Header_${Location}}']    PASSED :: Header "${AddressDetails_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${AddressDetails_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
+    ${AddressValue}    Get Text    //h6[text()='${AddressDetails_Header_${Location}}']/following-sibling::p
+    @{AddressValue_List}   Split To Lines    ${AddressValue}
+    Compare Lists    ${AddressValue_List}    ${AddressDetails_Value_${Location}}    PASSED :: Address line is displayed correctly in ${Region} >> ${Location}.   FAILED :: Address line is not displayed in ${Region} >> ${Location}
+    Validate Element    //h6[text()='${Phone_Numbers_Header_${Location}}']    PASSED :: Header "${Phone_Numbers_Header_${Location}}" is displayed.    FAILED :: Header "${Phone_Numbers_Header_${Location}}" is not displayed.
+    ${PhoneValue}    Get Text    //h6[text()='${Phone_Numbers_Header_${Location}}']/following-sibling::p
+    @{PhoneValue_List}   Split To Lines    ${PhoneValue}
+    Compare Lists    ${PhoneValue_List}    ${Phone_Numbers_Value_${Location}}    PASSED :: Phone number is displayed correctly in ${Region} >> ${Location}.   FAILED :: Phone number is not displayed in ${Region} >> ${Location}
+    Validate Element    //h6[text()='${EmailAddress_Header_${Location}}']    PASSED :: Header "${EmailAddress_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${EmailAddress_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
+    Validate Content    ${EmailAddress_Value_${Location}}   PASSED :: Email is displayed correctly in ${Region} >> ${Location} page.   FAILED :: Name "${Name_Value_${Location}}" is not displayed in ${Region} >> ${Location} page.
+    Validate Element    //h6[text()='${City_Header_${Location}}']    PASSED :: Header "${Name_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${Name_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
+    Validate Element    //p[text()='${City_Value_${Location}}']   PASSED :: City "${City_Value_${Location}}" is displayed correctly in ${Region} >> ${Location} page.   FAILED :: City "${City_Value_${Location}}" is not displayed in ${Region} >> ${Location} page.
+    Validate Element    ${CityEconomy_Header_Locator}    PASSED :: Header ECONOMY OF THE CITY is displayed in ${Region} >> ${Location} page.   FAILED :: Header ECONOMY OF THE CITY is not displayed in ${Region} >> ${Location} page.
+    ${CityEconomyContent}    Get Text    ${CityEconomy_Content_Locator}
+    @{CityEconomyContent_List}   Split To Lines   ${CityEconomyContent}
+    Compare Lists   ${CityEconomyContent_List}   ${Economy_${Location}}   PASSED :: Economy Of The City content is displayed correctly in ${Region} >> ${Location} page.   FAILED :: Economy Of The City content is not displayed correctly in ${Region} >> ${Location} page
+    Close Window
+    ${Wondows}        Get Window Handles
+    Select Window       ${Wondows}[-1]
+    ${i}   Run Keyword If    ${Status}   Set Variable    ${i}    ELSE    Evaluate   ${i}+1
+    Set Test Variable    ${i}   ${i}
 
 Compare Lists
     [Arguments]   ${ActualList}    ${ExpectedList}   ${PassMessage}    ${FailMessage}

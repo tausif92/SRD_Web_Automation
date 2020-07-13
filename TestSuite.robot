@@ -34,6 +34,25 @@ Resource            PageContents/Network/Delhi/SADAR BAZAAR.robot
 Resource            PageContents/Network/Delhi/SAMAIPUR BADLI.robot
 Resource            PageContents/Network/Delhi/SHAHADARA.robot
 Resource            PageContents/Network/Delhi/WAZIRPUR.robot
+Resource            PageContents/Network/Gujarat/Ahmedabad.robot
+Resource            PageContents/Network/Gujarat/Bhavnagar.robot
+Resource            PageContents/Network/Gujarat/Jamnagar.robot
+Resource            PageContents/Network/Gujarat/Rajkot.robot
+Resource            PageContents/Network/Gujarat/Daman.robot
+Resource            PageContents/Network/Gujarat/Vapi.robot
+Resource            PageContents/Network/Gujarat/CHATRAL.robot
+Resource            PageContents/Network/Haryana/FARIDABAD.robot
+Resource            PageContents/Network/Haryana/GURGAON.robot
+Resource            PageContents/Network/Haryana/KARNAL.robot
+Resource            PageContents/Network/Haryana/PANIPAT.robot
+Resource            PageContents/Network/Haryana/Jagadhri.robot
+Resource            PageContents/Network/Maharastra/Nagpur.robot
+Resource            PageContents/Network/Mumbai/Bhiwandi.robot
+Resource            PageContents/Network/Mumbai/DONGRI.robot
+Resource            PageContents/Network/Mumbai/OPERA HOUSE.robot
+Resource            PageContents/Network/Mumbai/SAKINAKA.robot
+Resource            PageContents/Network/Mumbai/VASAI (E ).robot
+Resource            PageContents/Network/Mumbai/Vashi.robot
 
 *** Test Cases ***
 SRD_Web_01: Home Page
@@ -92,9 +111,28 @@ SRD_Web_08: Network - Booking Centre - Delhi
     Validate Common Features
     Validate Locations    Delhi
 
-SRD_Web_08: Network - Booking Centre - Delhi
-    [Tags]   SRD_Web_08
+SRD_Web_09: Network - Booking Centre - Gujarat
+    [Tags]   SRD_Web_09
     Open Browser    ${URL}      ${BROWSER}
     Maximize Browser Window
     Validate Common Features
     Validate Locations    Gujarat
+
+SRD_Web_10: Network - Booking Centre - Haryana
+    [Tags]   SRD_Web_10
+    Open Browser    ${URL}      ${BROWSER}
+    Maximize Browser Window
+    Validate Common Features
+    Validate Locations    Haryana
+
+SRD_Web_11: Network - Booking Centre - Maharastra
+    [Tags]   SRD_Web_11
+    Open Browser    ${URL}      ${BROWSER}
+    Maximize Browser Window
+    Validate Common Features
+    Validate Locations    Maharastra
+
+
+
+
+

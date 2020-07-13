@@ -37,5 +37,14 @@ ${Delhi_Link_Locator}       //nav[@class='primary-menu']//span[text()='Delhi']
 ${Delhi_Header_Locator}       //h1[text()='Delhi']
 
 #Individual Locations in cities/states
-${CityEconomy_Header_Locator}    //h2[text()='Economy Of The City']
+${CityEconomy_Header_Locator}    //h2[text()='Economy Of The City' or text()=' ECONOMY OF THE CITY']
 ${CityEconomy_Content_Locator}    //div[@class="wpb_text_column wpb_content_element "]/div[@class="wpb_wrapper"]
+
+${Gujarat_Link_Locator}       //nav[@class='primary-menu']//span[text()='Gujarat']
+${Gujarat_Header_Locator}           //h1[text()='Gujarat']
+${Ahmedabad_Header_Locator}           //h1[text()='Ahmedabad']
+${Bhavnagar_Header_Locator}           //h1[text()='Bhavnagar']
+${Jamnagar_Header_Locator}           //h1[text()='Jamnagar']
+${Rajkot_Header_Locator}           //h1[text()='Rajkot']
+${Haryana_Link_Locator}       //nav[@class='primary-menu']//span[text()='Haryana']
+${Haryana_Header_Locator}           //h1[text()='Haryana']
