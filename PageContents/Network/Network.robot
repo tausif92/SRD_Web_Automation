@@ -50,14 +50,25 @@ ${Rajkot_PageTitle}                  Rajkot – SRD
 @{Rajkot_LocationList}               DHEBAR ROAD
                                 ...     METODA
                                 ...     SHAPAR
+
+#Haryana Locations
 ${Haryana_PageTitle}                  Haryana – SRD
 @{Haryana_LocationList}               FARIDABAD
                                 ...     GURGAON
                                 ...     KARNAL
                                 ...     PANIPAT
                                 ...     Jagadhri
+
+#Maharastra Locations
 ${Maharastra_PageTitle}                  Maharastra – SRD
 @{Maharastra_LocationList}               Nagpur
+
+${Nagpur_PageTitle}                  Nagpur – SRD
+@{Nagpur_LocationList}               BUTTIBORI
+                                ...     GANDHIBAGH
+#                                ...     WADI
+#                                ...     WADI
+
 
 ${Mumbai_PageTitle}                  Mumbai – SRD
 @{Mumbai_LocationList}               Bhiwandi
@@ -66,4 +77,65 @@ ${Mumbai_PageTitle}                  Mumbai – SRD
                                 ...     SAKINAKA
                                 ...     VASAI (E )
                                 ...     Vashi
+
+${Punjab_PageTitle}                  Punjab – SRD
+@{Punjab_LocationList}               AMRITSAR
+                                ...     DINANAGAR
+                                ...     JALANDHAR
+#                                ...     LUDHIANA
+                                ...     Malerkotla
+
+${Rajasthan_PageTitle}                  Rajasthan – SRD
+@{Rajasthan_LocationList}               BALOTRA
+                                ...     BHILWARA
+                                ...     PALI
+
+${Uttar Pradesh_PageTitle}                  Uttar Pradesh – SRD
+@{Uttar Pradesh_LocationList}               AGRA
+                                ...     ALIGARH
+                                ...     GHAZIABAD
+                                ...     MEERUT
+                                ...     NOIDA
+                                ...     PILKHUWA
+
+${Karnataka_PageTitle}                  Karnataka – SRD
+@{Karnataka_LocationList}               Bangalore
+                                ...     Mangalore
+
+#Kerala Locations
+${Kerala_PageTitle}                     Kerala – SRD
+@{Kerala_LocationList}                  Alleppey
+                                ...     ALWAYE
+                                ...     ANGAMALI
+                                ...     CALICUT
+                                ...     CHANGANACHERRY
+                                ...     ERNAKULAM
+                                ...     KANNUR
+                                ...     KOLLAM
+                                ...     KOTTAKAL
+                                ...     KOTTAYAM
+                                ...     KUNNAMKULAM
+                                ...     MANJERI
+                                ...     PALAKKAD
+                                ...     SULTAN BATHERY
+                                ...     THODUPUZHA
+                                ...     THRISSUR
+                                ...     TIRUR
+                                ...     Trivandrum
+
+#Tamilnadu Locations
+${Tamilnadu_PageTitle}                  Tamilnadu – SRD
+@{Tamilnadu_LocationList}               CHENNAI
+                                ...     COIMBATORE
+                                ...     ERODE
+                                ...     KARUR
+                                ...     MADURAI
+                                ...     PONDICHERRY
+                                ...     SALEM
+                                ...     TIRUNELVELI
+                                ...     TIRUPUR
+                                ...     TRICHY
+                                ...     VELLORE
+                                ...     DHALAVAIPURAM
+
 

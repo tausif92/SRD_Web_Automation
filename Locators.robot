@@ -37,7 +37,7 @@ ${Delhi_Link_Locator}       //nav[@class='primary-menu']//span[text()='Delhi']
 ${Delhi_Header_Locator}       //h1[text()='Delhi']
 
 #Individual Locations in cities/states
-${CityEconomy_Header_Locator}    //h2[text()='Economy Of The City' or text()=' ECONOMY OF THE CITY']
+${CityEconomy_Header_Locator}    //h2[contains(text(),'Economy Of The City') or text()=' ECONOMY OF THE CITY']
 ${CityEconomy_Content_Locator}    //div[@class="wpb_text_column wpb_content_element "]/div[@class="wpb_wrapper"]
 
 ${Gujarat_Link_Locator}       //nav[@class='primary-menu']//span[text()='Gujarat']
@@ -46,5 +46,66 @@ ${Ahmedabad_Header_Locator}           //h1[text()='Ahmedabad']
 ${Bhavnagar_Header_Locator}           //h1[text()='Bhavnagar']
 ${Jamnagar_Header_Locator}           //h1[text()='Jamnagar']
 ${Rajkot_Header_Locator}           //h1[text()='Rajkot']
+
 ${Haryana_Link_Locator}       //nav[@class='primary-menu']//span[text()='Haryana']
 ${Haryana_Header_Locator}           //h1[text()='Haryana']
+
+${Maharastra_Link_Locator}       //nav[@class='primary-menu']//span[text()='Maharastra']
+${Maharastra_Header_Locator}           //h1[text()='Maharastra']
+${Nagpur_Header_Locator}                //h1[text()='Nagpur']
+
+${Mumbai_Link_Locator}       //nav[@class='primary-menu']//span[text()='Mumbai']
+${Mumbai_Header_Locator}           //h1[text()='Mumbai']
+
+${Punjab_Link_Locator}       //nav[@class='primary-menu']//span[text()='Punjab']
+${Punjab_Header_Locator}           //h1[text()='Punjab']
+
+${Rajasthan_Link_Locator}       //nav[@class='primary-menu']//span[text()='Rajasthan']
+${Rajasthan_Header_Locator}           //h1[text()='Rajasthan']
+
+${Uttar Pradesh_Link_Locator}       //nav[@class='primary-menu']//span[text()='Uttar Pradesh']
+${Uttar Pradesh_Header_Locator}           //h1[text()='Uttar Pradesh']
+
+${Karnataka_Link_Locator}       //nav[@class='primary-menu']//span[text()='Karnataka']
+${Karnataka_Header_Locator}           //h1[text()='Karnataka']
+
+${Kerala_Link_Locator}       //nav[@class='primary-menu']//span[text()='Kerala']
+${Kerala_Header_Locator}           //h1[text()='Kerala']
+
+${Tamilnadu_Link_Locator}       //nav[@class='primary-menu']//span[text()='Tamilnadu']
+${Tamilnadu_Header_Locator}           //h1[text()='Tamilnadu']
+
+## Be a Franchisee
+${Franchisee_Link_Locator}                  //nav[@class='primary-menu']//span[text()='Be a Franchisee']
+${Franchisee_Header_Locator}                //h1[text()='Be a Franchisee']
+${Name_Textbox_Franchisee_Locator}          //input[@name='your-name']
+${Email_Textbox_Franchisee_Locator}         //input[@name='your-email']
+${Address_Textbox_Franchisee_Locator}       //input[@name='your-address']
+${PhNo_Textbox_Franchisee_Locator}          //input[@name='your-phoneno']
+${Area_Textbox_Franchisee_Locator}          //input[@name='your-area']
+${City_Textbox_Franchisee_Locator}          //input[@name='your-city']
+${Message_Textbox_Franchisee_Locator}       //textarea[@name='your-message']
+${Submit_Button_Franchisee_Locator}         //span[text()='Submit']
+${SentSuccess_Message_Franchisee_Locator}     //div[text()='Thank you for your message. It has been sent.' and @style='display: block;']
+
+## Work at SRD
+${WorkAtSRD_Link_Locator}                   //nav[@class='primary-menu']//span[text()='Work at SRD']
+${WorkAtSRD_Header_Locator}                 //h1[text()='Work at SRD']
+${FName_Textbox_WorkAtSRD_Locator}          //input[@name='your-firstname']
+${LName_Textbox_WorkAtSRD_Locator}          //input[@name='your-lastname']
+${Email_Textbox_WorkAtSRD_Locator}          //input[@name='your-email']
+${PhNo_Textbox_WorkAtSRD_Locator}           //input[@name='your-contactno']
+${Post_Textbox_WorkAtSRD_Locator}           //input[@name='your-post']
+${ChooseFile_WorkAtSRD_Locator}             //input[@type='file']
+${Message_Textbox_WorkAtSRD_Locator}        //textarea[@name='your-message']
+${Submit_Button_WorkAtSRD_Locator}          //span[text()='Submit']
+${SentSuccess_Message_WorkAtSRD_Locator}     //div[text()='Thank you for your message. It has been sent.' and @style='display: block;']
+
+## Track consignment
+${TrackConsignment_Header_Locator}          //h1[text()='Track Consignment']
+${LrNo_Textbox_Locator}                     //input[@id='lrNumberSearch']
+${Track_Button_Locator}                     //button[@id='trackBtn']
+${Reset_Button_Locator}                     //button[@id='resetBtn']
+#${Source_Map_Locator}                       //div[contains(@style,'z-index: 4')]//img[@src='img/source.gif']
+${Source_Map_Locator}                       (//img[@src='img/source.gif'])[1]
+${Destination_Map_Locator}                  //div[contains(@style,'z-index: 4')]//img[@src='img/Destination.gif']

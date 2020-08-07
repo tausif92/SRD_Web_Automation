@@ -1,60 +1,8 @@
 *** Settings ***
-Library             Selenium2Library
-Library             String
-Resource            TestData.robot
-Resource            Keywords.robot
-Resource            Locators.robot
-Resource            PageContents/HomePageContents.robot
-Resource            PageContents/CommonContents.robot
-Resource            PageContents/AboutUsPageContents.robot
-Resource            PageContents/Services/FTLPageContents.robot
-Resource            PageContents/Services/PLTPageContents.robot
-Resource            PageContents/Services/ODCCargoPageContents.robot
-Resource            PageContents/Services/WarehousingPageContents.robot
-Resource            PageContents/Services/DistributionPageContents.robot
-Resource            PageContents/Network/Network.robot
-Resource            PageContents/Network/Delhi/NANGLI POONA.robot
-Resource            PageContents/Network/Delhi/BUDHPUR.robot
-Resource            PageContents/Network/Delhi/BABARPUR.robot
-Resource            PageContents/Network/Delhi/BAWANA.robot
-Resource            PageContents/Network/Delhi/DAYA BASTI.robot
-Resource            PageContents/Network/Delhi/HAMILTON ROAD.robot
-Resource            PageContents/Network/Delhi/JAMUNA BAZAAR.robot
-Resource            PageContents/Network/Delhi/KAILASH NAGAR.robot
-Resource            PageContents/Network/Delhi/KAMLA MARKET.robot
-Resource            PageContents/Network/Delhi/KAROL BAGH.robot
-Resource            PageContents/Network/Delhi/KASHMERE GATE.robot
-Resource            PageContents/Network/Delhi/MANGOL PURI.robot
-Resource            PageContents/Network/Delhi/MAYAPURI.robot
-Resource            PageContents/Network/Delhi/MUNDKA.robot
-Resource            PageContents/Network/Delhi/NARAINA.robot
-Resource            PageContents/Network/Delhi/NARELA.robot
-Resource            PageContents/Network/Delhi/New Lajpat Rai Market.robot
-Resource            PageContents/Network/Delhi/SADAR BAZAAR.robot
-Resource            PageContents/Network/Delhi/SAMAIPUR BADLI.robot
-Resource            PageContents/Network/Delhi/SHAHADARA.robot
-Resource            PageContents/Network/Delhi/WAZIRPUR.robot
-Resource            PageContents/Network/Gujarat/Ahmedabad.robot
-Resource            PageContents/Network/Gujarat/Bhavnagar.robot
-Resource            PageContents/Network/Gujarat/Jamnagar.robot
-Resource            PageContents/Network/Gujarat/Rajkot.robot
-Resource            PageContents/Network/Gujarat/Daman.robot
-Resource            PageContents/Network/Gujarat/Vapi.robot
-Resource            PageContents/Network/Gujarat/CHATRAL.robot
-Resource            PageContents/Network/Haryana/FARIDABAD.robot
-Resource            PageContents/Network/Haryana/GURGAON.robot
-Resource            PageContents/Network/Haryana/KARNAL.robot
-Resource            PageContents/Network/Haryana/PANIPAT.robot
-Resource            PageContents/Network/Haryana/Jagadhri.robot
-Resource            PageContents/Network/Maharastra/Nagpur.robot
-Resource            PageContents/Network/Mumbai/Bhiwandi.robot
-Resource            PageContents/Network/Mumbai/DONGRI.robot
-Resource            PageContents/Network/Mumbai/OPERA HOUSE.robot
-Resource            PageContents/Network/Mumbai/SAKINAKA.robot
-Resource            PageContents/Network/Mumbai/VASAI (E ).robot
-Resource            PageContents/Network/Mumbai/Vashi.robot
+Resource            Init.robot
 
 *** Test Cases ***
+
 SRD_Web_01: Home Page
     [Tags]   SRD_Web_01
     Open Browser    ${URL}      ${BROWSER}
@@ -125,6 +73,7 @@ SRD_Web_10: Network - Booking Centre - Haryana
     Validate Common Features
     Validate Locations    Haryana
 
+#Maharashtra - WADI location is pending (there are 2 WADI locations in Nagpur)
 SRD_Web_11: Network - Booking Centre - Maharastra
     [Tags]   SRD_Web_11
     Open Browser    ${URL}      ${BROWSER}
@@ -132,7 +81,81 @@ SRD_Web_11: Network - Booking Centre - Maharastra
     Validate Common Features
     Validate Locations    Maharastra
 
+SRD_Web_12: Network - Booking Centre - Mumbai
+    [Tags]   SRD_Web_12
+    Open Browser    ${URL}      ${BROWSER}
+    Maximize Browser Window
+    Validate Common Features
+    Validate Locations    Mumbai
 
+#Punjab - Ludhiana location is pending (there are 3 Ludhiana locations in Ludhiana)
+SRD_Web_13: Network - Booking Centre - Punjab
+    [Tags]   SRD_Web_13
+    Open Browser    ${URL}      ${BROWSER}
+    Maximize Browser Window
+    Validate Common Features
+    Validate Locations    Punjab
 
+SRD_Web_14: Network - Booking Centre - Rajasthan
+    [Tags]   SRD_Web_14
+    Open Browser    ${URL}      ${BROWSER}
+    Maximize Browser Window
+    Validate Common Features
+    Validate Locations    Rajasthan
+
+SRD_Web_15: Network - Booking Centre - Uttar Pradesh
+    [Tags]   SRD_Web_15
+    Open Browser    ${URL}      ${BROWSER}
+    Maximize Browser Window
+    Validate Common Features
+    Validate Locations    Uttar Pradesh
+
+SRD_Web_16: Network - Delivery Centre - Karnataka
+    [Tags]   SRD_Web_16
+    Open Browser    ${URL}      ${BROWSER}
+    Maximize Browser Window
+    Validate Common Features
+    Validate Locations    Karnataka
+
+SRD_Web_17: Network - Delivery Centre - Kerala
+    [Tags]   SRD_Web_17
+    Open Browser    ${URL}      ${BROWSER}
+    Maximize Browser Window
+    Validate Common Features
+    Validate Locations    Kerala
+
+SRD_Web_18: Network - Delivery Centre - Tamilnadu
+    [Tags]   SRD_Web_18
+    Open Browser    ${URL}      ${BROWSER}
+    Maximize Browser Window
+    Validate Common Features
+    Validate Locations    Tamilnadu
+
+SRD_Web_19: Join Us - Be a Franchisee
+    [Tags]   SRD_Web_19
+    Open Browser    ${URL}      ${BROWSER}
+    Maximize Browser Window
+    Validate Common Features
+    Validate Franchisee Page Form
+
+SRD_Web_20: Join Us - Work at SRD
+    [Tags]   SRD_Web_20
+    Open Browser    ${URL}      ${BROWSER}
+    Maximize Browser Window
+    Validate Common Features
+    Validate Work At SRD Page Form
+
+SRD_Web_21: Track Consignment
+    [Tags]   SRD_Web_21
+    Open Browser    ${URL}      ${BROWSER}
+    Maximize Browser Window
+    Validate Common Features
+    Validate Consignment Tracking
+
+SRD_Web_22: Feedback - Write a Testimonial
+    [Tags]   SRD_Web_22
+    Open Browser    ${URL}      ${BROWSER}
+    Maximize Browser Window
+    Validate Common Features
 
 

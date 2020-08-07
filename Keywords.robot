@@ -1,4 +1,122 @@
 *** Keywords ***
+
+Validate Consignment Tracking
+    Wait And Click    ${TrackConsignment_Link_Locator}
+    Select Window       NEW
+    Sleep    1
+    ${Title}    Get Title
+    Run Keyword If    '${TrackConsignment_PageTitle}'=='${Title}'   Log To Console   PASSED :: "${Title}" page title is displayed correctly.   ELSE    Fail   FAILED :: Page title should be "${TrackConsignment_PageTitle}" but it was "${Title}".
+    Validate Element    ${TrackConsignment_Header_Locator}   PASSED :: Header "Track Consignment" is displayed.    FAILED :: Header "Track Consignment" is not displayed.
+    Validate Content    ${Line1_TrackConsignment}    PASSED :: Line 1 content is displayed in Track Consignment page.    FAILED :: Line 1 content is not displayed in Track Consignment page "${Line1_TrackConsignment}".
+    Validate Content    ${Line2_TrackConsignment}    PASSED :: Line 2 content is displayed in Track Consignment page.    FAILED :: Line 2 content is not displayed in Track Consignment page "${Line2_TrackConsignment}".
+    ${LrList_Length}    Get Length      ${LrNo_List}
+    ${LrList_Length}    Evaluate        ${LrList_Length}-1
+    ${ListIndex}        Evaluate        random.randint(0, ${LrList_Length})
+    ${LrNo}             Set Variable    ${LrNo_List}[${ListIndex}]
+    Log To Console      \nTracking consignment for LR No: ${LrNo}
+    Wait And Input      ${LrNo_Textbox_Locator}     ${LrNo}
+    Wait And Click      ${Track_Button_Locator}
+
+    ### Validating Tracking details
+    Validate Element    //h3[text()='LR No']    PASSED :: Header "LR No" is displayed in Track Consignment page.    FAILED :: Header "LR No" is not displayed in Track Consignment page.
+    ${LrNo_App}     Get Text    //p[@id='lrNo']
+    Run Keyword If    '${LrNo_App}'=='${LrNo}'   Log To Console   PASSED :: LR Number in the result matches with the LR number being searched for "${LrNo}"    ELSE    Fail    FAILED :: LR Number in the result should be "${LrNo}" but it was "${LrNo_App}"
+    Validate Element    //h3[text()='Number Of Articles']    PASSED :: Header "Number Of Articles" is displayed in Track Consignment page.    FAILED :: PASSED :: Header "Number Of Articles" is not displayed in Track Consignment page.
+    ${Articles_App}     Get Text    //p[@id='articles']
+    Should Not Be Empty     ${Articles_App}    FAILED :: Number of articles value is not displayed.
+    Log To Console    PASSED :: Number of articles is not empty and has value "${Articles_App}".
+    Validate Element    //h3[text()='Weight']    PASSED :: Header "Weight" is displayed in Track Consignment page.    FAILED :: Header "Weight" is not displayed in Track Consignment page.
+    ${Weight_App}     Get Text    //p[@id='chgWgt']
+    Should Not Be Empty     ${Weight_App}    FAILED :: Weight value is not displayed.
+    Log To Console    PASSED :: Weight is not empty and has value "${Weight_App}".
+    Validate Element    //h3[text()='Status']    PASSED :: Header "Status" is displayed in Track Consignment page.    FAILED :: Header "Status" is not displayed in Track Consignment page.
+    ${Status_App}     Get Text    //p[@id='status']
+    Should Not Be Empty     ${Status_App}    FAILED :: Status value is not displayed.
+    Log To Console    PASSED :: Status is not empty and has value "${Status_App}".
+    Validate Element    //h3[text()='Booking Date']    PASSED :: Header "Booking Date" is displayed in Track Consignment page.    FAILED :: Header "Booking Date" is not displayed in Track Consignment page.
+    ${BookingDate_App}     Get Text    //p[@id='bookingDate']
+    Should Not Be Empty     ${BookingDate_App}    FAILED :: Booking Date value is not displayed.
+    Log To Console    PASSED :: Booking Date is not empty and has value "${BookingDate_App}".
+    Validate Element    //h3[text()='Route']    PASSED :: Header "Route" is displayed in Track Consignment page.    FAILED :: Header "Route" is not displayed in Track Consignment page.
+    ${Route_App}     Get Text    //p[@id='route']
+    Should Not Be Empty     ${Route_App}    FAILED :: Route value is not displayed.
+    Log To Console    PASSED :: Route is not empty and has value "${Route_App}".
+    Validate Element    //h3[text()='Goods']    PASSED :: Header "Goods" is displayed in Track Consignment page.    FAILED :: Header "Goods" is not displayed in Track Consignment page.
+    ${Goods_App}     Get Text    //p[@id='commodity']
+    Scroll To Element    //p[@id='commodity']
+    Should Not Be Empty     ${Goods_App}    FAILED :: Goods value is not displayed.
+    Log To Console    PASSED :: Goods is not empty and has value "${Goods_App}".
+
+#    ## Validating details in map
+##    Validate Element    ${Source_Map_Locator}    PASSED :: Source icon is displayed in the map.    FAILED :: Source icon is not displayed in the map.
+#    Sleep    2
+#    Wait And Click      ${Source_Map_Locator}
+#    Validate Element    //u[text()='Source Details']    PASSED :: Header "Source Details" is displayed in the map in Track Consignment page.    FAILED :: Header "Source Details" is not displayed in the map in Track Consignment page.
+#    ${ConsignmentNo}    Get Text    //u[text()='Source Details']/../../../p[1]
+#    ${Status}           Get Text    //u[text()='Source Details']/../../../p[2]
+#    ${Source}           Get Text    //u[text()='Source Details']/../../../p[3]
+#    ${ContactPerson}    Get Text    //u[text()='Source Details']/../../../p[4]
+#    ${ContactNo}        Get Text    //u[text()='Source Details']/../../../p[5]
+#    Wait And Click      //u[text()='Source Details']/../../../../../../button
+#
+##    Validate Element    ${Destination_Map_Locator}    PASSED :: Destination icon is displayed in the map.    FAILED :: Destination icon is not displayed in the map.
+#    Wait And Click      ${Destination_Map_Locator}
+#    Validate Element    //u[text()='Destination Details']    PASSED :: Header "Source Details" is displayed in the map in Track Consignment page.    FAILED :: Header "Source Details" is not displayed in the map in Track Consignment page.
+#    ${ConsignmentNo}    Get Text    //u[text()='Destination Details']/../../../p[1]
+#    ${Status}           Get Text    //u[text()='Destination Details']/../../../p[2]
+#    ${Source}           Get Text    //u[text()='Destination Details']/../../../p[3]
+#    ${ContactPerson}    Get Text    //u[text()='Destination Details']/../../../p[4]
+#    ${ContactNo}        Get Text    //u[text()='Destination Details']/../../../p[5]
+#    Wait And Click      //u[text()='Destination Details']/../../../../../../button
+
+    #Reset button
+    Wait And Click      ${Reset_Button_Locator}
+    Sleep    1
+#    Textfield Value Should Be    ${LrNo_Textbox_Locator}    ${EMPTY}
+    Close Window
+    Select Window       MAIN
+
+Validate Work At SRD Page Form
+    Mouse Over    ${JoinUs_Link_Locator}
+    Validate Element    ${WorkAtSRD_Link_Locator}    \nPASSED :: "Work at SRD" link is displayed in Join Us.    \nFAILED :: "Work at SRD" link is not displayed in Join Us.
+    Sleep    0.5
+    Wait And Click      ${WorkAtSRD_Link_Locator}
+    Validate Common Features
+    ${Title}    Get Title
+    Run Keyword If    '${WorkAtSRD_PageTitle}'=='${Title}'   Log To Console   PASSED :: "${Title}" page title is displayed correctly.   ELSE    Fail   FAILED :: Page title should be "${WorkAtSRD_PageTitle}" but it was "${Title}".
+    Validate Element    ${WorkAtSRD_Header_Locator}   PASSED :: Header "Work at SRD" is displayed.    FAILED :: Header "Work at SRD" is not displayed.
+    Wait And Input      ${FName_Textbox_WorkAtSRD_Locator}          ${FName_WorkAtSRD}
+    Wait And Input      ${LName_Textbox_WorkAtSRD_Locator}         ${LName_WorkAtSRD}
+    Wait And Input      ${Email_Textbox_WorkAtSRD_Locator}       ${Email_WorkAtSRD}
+    Wait And Input      ${PhNo_Textbox_WorkAtSRD_Locator}       ${Contact_WorkAtSRD}
+    Wait And Input      ${Post_Textbox_WorkAtSRD_Locator}          ${Post_WorkAtSRD}
+    Choose File         ${ChooseFile_WorkAtSRD_Locator}             ${CURDIR}/TestFileUpload.png
+    Wait And Input      ${Message_Textbox_WorkAtSRD_Locator}        ${Message_WorkAtSRD}
+    Sleep    0.5
+    Wait And Click      ${Submit_Button_WorkAtSRD_Locator}
+    Validate Element    ${SentSuccess_Message_WorkAtSRD_Locator}    PASSED :: Message for "Be a Franchisee" is successfully sent.    FAILED :: Message for "Be a Franchisee" is not sent.    30
+
+Validate Franchisee Page Form
+    Mouse Over    ${JoinUs_Link_Locator}
+    Validate Element    ${Franchisee_Link_Locator}    \nPASSED :: "Be a Franchisee" link is displayed in Join Us.    \nFAILED :: "Be a Franchisee" link is not displayed in Join Us.
+    Sleep    0.5
+    Wait And Click      ${Franchisee_Link_Locator}
+    Validate Common Features
+    ${Title}    Get Title
+    Run Keyword If    '${Franchisee_PageTitle}'=='${Title}'   Log To Console   PASSED :: "${Title}" page title is displayed correctly.   ELSE    Fail   FAILED :: Page title should be "${Franchisee_PageTitle}" but it was "${Title}".
+    Validate Element    ${Franchisee_Header_Locator}   PASSED :: Header "Be a Franchisee" is displayed.    FAILED :: Header "Be a Franchisee" is not displayed.
+    Validate Content    ${Line1_Franchisee}          PASSED :: Fill form line is displayed in Be a Franchisee page.    FAILED :: Fill form line is displayed in Be a Franchisee page "${Line1_Franchisee}".
+    Wait And Input      ${Name_Textbox_Franchisee_Locator}          ${Name_Franchisee}
+    Wait And Input      ${Email_Textbox_Franchisee_Locator}         ${Email_Franchisee}
+    Wait And Input      ${Address_Textbox_Franchisee_Locator}       ${Address_Franchisee}
+    Wait And Input      ${PhNo_Textbox_Franchisee_Locator}       ${PhNo_Franchisee}
+    Wait And Input      ${Area_Textbox_Franchisee_Locator}          ${Area_Franchisee}
+    Wait And Input      ${City_Textbox_Franchisee_Locator}          ${City_Franchisee}
+    Wait And Input      ${Message_Textbox_Franchisee_Locator}       ${Message_Franchisee}
+    Sleep    0.5
+    Wait And Click      ${Submit_Button_Franchisee_Locator}
+    Validate Element    ${SentSuccess_Message_Franchisee_Locator}    PASSED :: Message for "Be a Franchisee" is successfully sent.    FAILED :: Message for "Be a Franchisee" is not sent.    30
+
 #Validate Locations
 #    [Arguments]   ${Region}
 #    Mouse Over    ${Network_Link_Locator}
@@ -49,7 +167,8 @@
 Validate Locations
     [Arguments]   ${Region}
     Mouse Over    ${Network_Link_Locator}
-    Validate Element    ${${Region}_Link_Locator}    PASSED :: ${Region} link is displayed in Services.    FAILED :: ${Region} link is not displayed in Services.
+    Validate Element    ${${Region}_Link_Locator}    PASSED :: ${Region} link is displayed in Network.    FAILED :: ${Region} link is not displayed in Network.
+    Sleep    0.5
     Wait And Click      ${${Region}_Link_Locator}
     Validate Common Features
     ${Title}    Get Title
@@ -105,7 +224,7 @@ Validate Location Page
     Validate Common Features
     ${Title}   Get Title
     Run Keyword If    '${PageTitle_${Location}}'=='${Title}'   Log To Console   PASSED :: ${Region} >> ${Location} page title is displayed correctly.   ELSE    Fail   FAILED :: ${Region} >> ${Location} page title should be "${PageTitle_${Location}}" but it was "${Title}".
-    Validate Element    //div[@class="g5plus-heading style1 text-left color-dark"]/h2[contains(text(),'${Header_${Location}}')]    PASSED :: Header ${Header_${Location}} is displayed ${Region} >> ${Location} page.    FAILED :: Header ${Header_${Location}} is not displayed ${Region} >> ${Location} page.
+    Validate Element    //div[contains(@class,'g5plus-heading style1 text-left color-dark')]/h2[contains(text(),'${Header_${Location}}')]    PASSED :: Header ${Header_${Location}} is displayed ${Region} >> ${Location} page.    FAILED :: Header ${Header_${Location}} is not displayed ${Region} >> ${Location} page.
     Validate Element    //h6[text()='${Name_Header_${Location}}']    PASSED :: Header "${Name_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${Name_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
     Validate Content Contains   ${Name_Value_${Location}}   PASSED :: Name is displayed correctly in ${Region} >> ${Location} page.   FAILED :: Name "${Name_Value_${Location}}" is not displayed in ${Region} >> ${Location} page.
     Validate Element    //h6[text()='${AddressDetails_Header_${Location}}']    PASSED :: Header "${AddressDetails_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${AddressDetails_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
@@ -117,9 +236,9 @@ Validate Location Page
     @{PhoneValue_List}   Split To Lines    ${PhoneValue}
     Compare Lists    ${PhoneValue_List}    ${Phone_Numbers_Value_${Location}}    PASSED :: Phone number is displayed correctly in ${Region} >> ${Location}.   FAILED :: Phone number is not displayed in ${Region} >> ${Location}
     Validate Element    //h6[text()='${EmailAddress_Header_${Location}}']    PASSED :: Header "${EmailAddress_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${EmailAddress_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
-    Validate Content    ${EmailAddress_Value_${Location}}   PASSED :: Email is displayed correctly in ${Region} >> ${Location} page.   FAILED :: Name "${Name_Value_${Location}}" is not displayed in ${Region} >> ${Location} page.
+    Validate Content Contains    ${EmailAddress_Value_${Location}}   PASSED :: Email is displayed correctly in ${Region} >> ${Location} page.   FAILED :: Email "${EmailAddress_Value_${Location}}" is not displayed in ${Region} >> ${Location} page.
     Validate Element    //h6[text()='${City_Header_${Location}}']    PASSED :: Header "${Name_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${Name_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
-    Validate Element    //p[text()='${City_Value_${Location}}']   PASSED :: City "${City_Value_${Location}}" is displayed correctly in ${Region} >> ${Location} page.   FAILED :: City "${City_Value_${Location}}" is not displayed in ${Region} >> ${Location} page.
+    Validate Element    //p[contains(text(),'${City_Value_${Location}}')]   PASSED :: City "${City_Value_${Location}}" is displayed correctly in ${Region} >> ${Location} page.   FAILED :: City "${City_Value_${Location}}" is not displayed in ${Region} >> ${Location} page.
     Validate Element    ${CityEconomy_Header_Locator}    PASSED :: Header ECONOMY OF THE CITY is displayed in ${Region} >> ${Location} page.   FAILED :: Header ECONOMY OF THE CITY is not displayed in ${Region} >> ${Location} page.
     ${CityEconomyContent}    Get Text    ${CityEconomy_Content_Locator}
     @{CityEconomyContent_List}   Split To Lines   ${CityEconomyContent}
@@ -139,7 +258,7 @@ Compare Lists
     END
 
 Validate Common Features
-    Validate Element    ${Logo_Locator}    PASSED :: SRD Logo is displayed.    FAILED :: SRD Logo is not displayed.
+    Validate Element    ${Logo_Locator}    \nPASSED :: SRD Logo is displayed.    \nFAILED :: SRD Logo is not displayed.
     Validate Content    ${Text_TollFreeNumber}    PASSED :: Toll free number "${Text_TollFreeNumber}" is displayed.   FAILED :: Toll free number "${Text_TollFreeNumber}" is not displayed.
     Validate Content    ${Text_CinNo&TransportId}    PASSED :: CIN Number and Transporter Id is displayed.    FAILED :: CIN Number and Transporter Id is not displayed "${Text_CinNo&TransportId}".
     Validate Content    ${Chat_LeaveMessage}    PASSED :: Leave a message chat is displayed.    FAILED :: Leave a message chat is not displayed.
@@ -358,7 +477,7 @@ Validate Content
     Log To Console      ${PassMessage}
 
 Validate Element
-    [Arguments]    ${Locator}   ${PassMessage}    ${FailMessage}
+    [Arguments]    ${Locator}   ${PassMessage}    ${FailMessage}    ${TIMEOUT}=${TIMEOUT}
     ${Xpath}    Replace Variables    ${Locator}
     Wait Until Element Is Visible    ${Xpath}    ${TIMEOUT}    ${FailMessage}
     Run Keyword And Ignore Error    Scroll To Element   ${Xpath}
