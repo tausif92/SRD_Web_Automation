@@ -240,7 +240,7 @@ Validate Locations
         Sleep    1
         ${TmpStatus}    Run Keyword And Return Status    Wait And Click      ${Xpath}
         Run Keyword Unless    ${TmpStatus}    Scroll To Element   (//h6/../..)[${ScrollIndex}]    true
-        Wait And Click      ${Xpath}
+        Run Keyword Unless    ${TmpStatus}    Wait And Click      ${Xpath}
         Sleep    1
         Select Window       NEW
         Validate Common Features
