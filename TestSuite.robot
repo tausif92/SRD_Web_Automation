@@ -1,5 +1,6 @@
 *** Settings ***
 Resource            Init.robot
+Test Teardown       Close Browser
 
 *** Test Cases ***
 
