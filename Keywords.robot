@@ -1,5 +1,60 @@
 *** Keywords ***
 
+Validate Contact Us Page
+    Wait And Click      ${ContactUs_Link_Locator}
+    Validate Common Features
+    ${Title}    Get Title
+    Run Keyword If    '${ContactUs_PageTitle}'=='${Title}'   Log To Console   PASSED :: "${Title}" page title is displayed correctly.   ELSE    Fail   FAILED :: Page title should be "${ContactUs_PageTitle}" but it was "${Title}".
+    Validate Element    ${ContactUs_Header_Locator}   PASSED :: Header "Contact Us" is displayed.    FAILED :: Header "Contact Us" is not displayed.
+    Validate Element    //h6[text()='${HeadOffice_Header_ContactUs}']    PASSED :: Header "${HeadOffice_Header_ContactUs}" is displayed in Contact Us page.    FAILED :: Header "${HeadOffice_Header_ContactUs}" is not displayed in Contact Us page.
+    Validate Content   ${HeadOffice_Value_ContactUs}   PASSED :: Head Office address is displayed correctly in Contact Us page.   FAILED :: Head Office address "${HeadOffice_Value}" is not displayed correctly in Contact Us page.
+    Validate Element   (//h6[text()='${Phone_Numbers_Header_ContactUs}'])[1]    PASSED :: Header "${Phone_Numbers_Header_ContactUs}" is displayed.    FAILED :: Header "${Phone_Numbers_Header_ContactUs}" is not displayed.
+    Validate Content   ${Phone_Numbers_Value_ContactUs}   PASSED :: Phone number is displayed correctly in Contact Us page.   FAILED :: Phone number is not displayed correctly in Contact Us page.
+    Validate Element    //h6[text()='${EmailAddress_Header_ContactUs}']    PASSED :: Header "${EmailAddress_Header_ContactUs}" is displayed in Contact Us page.    FAILED :: Header "${EmailAddress_Header_ContactUs}" is not displayed in Contact Us page.
+    Validate Content    ${EmailAddress_Value_ContactUs}   PASSED :: Email is displayed correctly in Contact Us page.   FAILED :: Email "${EmailAddress_Value_ContactUs}" is not displayed in Contact Us page.
+    Validate Element   (//h6[text()='${Phone_Numbers_Header_ContactUs}'])[2]    PASSED :: Header "${Phone_Numbers_Header_ContactUs}" is displayed.    FAILED :: Header "${Phone_Numbers_Header_ContactUs}" is not displayed.
+    Validate Content   ${Phone_Numbers_Value2_ContactUs}   PASSED :: Phone number is displayed correctly in Contact Us page.   FAILED :: Phone number is not displayed correctly in Contact Us page.
+    Validate Element   //div[@class='vc_tta-tabs-container']//span[text()='Head Office :']    PASSED :: Head Office tab is displayed in Contact Us page.   FAILED :: Head Office tab not is displayed correctly in Contact Us page.
+    Wait And Click     //div[@class='vc_tta-tabs-container']//span[text()='Head Office :']
+    Sleep    1
+
+
+
+Validate Give Your Feedback Form
+    Mouse Over    ${Feedback_Link_Locator}
+    Validate Element    ${GiveFeedback_Link_Locator}    \nPASSED :: "Give Your Feedback" link is displayed in Feedback.    \nFAILED :: "Give Your Feedback" link is not displayed in Feedback.
+    Sleep    0.5
+    Wait And Click      ${GiveFeedback_Link_Locator}
+    Validate Common Features
+    ${Title}    Get Title
+    Run Keyword If    '${GiveYourFeedback_PageTitle}'=='${Title}'   Log To Console   PASSED :: "${Title}" page title is displayed correctly.   ELSE    Fail   FAILED :: Page title should be "${GiveYourFeedback_PageTitle}" but it was "${Title}".
+    Validate Element    ${GiveFeedback_Header_Locator}   PASSED :: Header "Give Your Feedback" is displayed.    FAILED :: Header "Give Your Feedback" is not displayed.
+    Wait And Input      ${Name_Textbox_Feedback_Locator}          ${Name_Feedback}
+    Wait And Input      ${Email_Textbox_Feedback_Locator}         ${Email_Feedback}
+    Wait And Input      ${Message_Textbox_Feedback_Locator}        ${Message_Feedback}
+    Sleep    0.5
+    Wait And Click      ${Submit_Button_Feedback_Locator}
+    Validate Element    ${SentSuccess_Message_Feedback_Locator}    PASSED :: Message for "Give Your Feedback" is successfully sent.    FAILED :: Message for "Give Your Feedback" is not sent.    30
+
+Validate Write A Testimonial Form
+    Mouse Over    ${Feedback_Link_Locator}
+    Validate Element    ${Testimonial_Link_Locator}    \nPASSED :: "Write A Testimonial" link is displayed in Feedback.    \nFAILED :: "Write A Testimonial" link is not displayed in Feedback.
+    Sleep    0.5
+    Wait And Click      ${Testimonial_Link_Locator}
+    Validate Common Features
+    ${Title}    Get Title
+    Run Keyword If    '${WriteATestimonial_PageTitle}'=='${Title}'   Log To Console   PASSED :: "${Title}" page title is displayed correctly.   ELSE    Fail   FAILED :: Page title should be "${WriteATestimonial_PageTitle}" but it was "${Title}".
+    Validate Element    ${WriteATestimonial_Header_Locator}   PASSED :: Header "Write A Testimonial" is displayed.    FAILED :: Header "Write A Testimonial" is not displayed.
+    Wait And Input      ${Name_Textbox_Testimonial_Locator}          ${Name_Testimonial}
+    Wait And Input      ${Email_Textbox_Testimonial_Locator}         ${Email_Testimonial}
+    Wait And Input      ${Company_Textbox_Testimonial_Locator}       ${Company_Testimonial}
+    Wait And Input      ${Designation_Textbox_Testimonial_Locator}       ${Designation_Testimonial}
+    Wait And Input      ${Message_Textbox_Testimonial_Locator}        ${Message_Testimonial}
+    Sleep    0.5
+    Wait And Click      ${Submit_Button_Testimonial_Locator}
+    Validate Element    ${SentSuccess_Message_Testimonial_Locator}    PASSED :: Message for "Write A Testimonial" is successfully sent.    FAILED :: Message for "Write A Testimonial" is not sent.    30
+
+
 Validate Consignment Tracking
     Wait And Click    ${TrackConsignment_Link_Locator}
     Select Window       NEW
@@ -259,7 +314,7 @@ Compare Lists
 
 Validate Common Features
     Validate Element    ${Logo_Locator}    \nPASSED :: SRD Logo is displayed.    \nFAILED :: SRD Logo is not displayed.
-    Validate Content    ${Text_TollFreeNumber}    PASSED :: Toll free number "${Text_TollFreeNumber}" is displayed.   FAILED :: Toll free number "${Text_TollFreeNumber}" is not displayed.
+#    Validate Content    ${Text_TollFreeNumber}    PASSED :: Toll free number "${Text_TollFreeNumber}" is displayed.   FAILED :: Toll free number "${Text_TollFreeNumber}" is not displayed.
     Validate Content    ${Text_CinNo&TransportId}    PASSED :: CIN Number and Transporter Id is displayed.    FAILED :: CIN Number and Transporter Id is not displayed "${Text_CinNo&TransportId}".
     Validate Content    ${Chat_LeaveMessage}    PASSED :: Leave a message chat is displayed.    FAILED :: Leave a message chat is not displayed.
     Validate Element    ${Home_Link_Locator}    PASSED :: Home link is displayed.    FAILED :: Home link is displayed.

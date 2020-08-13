@@ -157,5 +157,25 @@ SRD_Web_22: Feedback - Write a Testimonial
     Open Browser    ${URL}      ${BROWSER}
     Maximize Browser Window
     Validate Common Features
+    Validate Write A Testimonial Form
 
+#Pending
+SRD_Web_23: Feedback - View Testimonial
+    [Tags]   SRD_Web_23
+    Open Browser    ${URL}      ${BROWSER}
+    Maximize Browser Window
+    Validate Common Features
 
+SRD_Web_24: Feedback - Give Your Feedback
+    [Tags]   SRD_Web_24
+    Open Browser    ${URL}      ${BROWSER}
+    Maximize Browser Window
+    Validate Common Features
+    Validate Give Your Feedback Form
+
+SRD_Web_25: Contact Us
+    [Tags]   SRD_Web_24
+    Open Browser    ${URL}      ${BROWSER}
+    Maximize Browser Window
+    Validate Common Features
+    Validate Contact Us Page

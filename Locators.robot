@@ -109,3 +109,30 @@ ${Reset_Button_Locator}                     //button[@id='resetBtn']
 #${Source_Map_Locator}                       //div[contains(@style,'z-index: 4')]//img[@src='img/source.gif']
 ${Source_Map_Locator}                       (//img[@src='img/source.gif'])[1]
 ${Destination_Map_Locator}                  //div[contains(@style,'z-index: 4')]//img[@src='img/Destination.gif']
+
+## Write A Testimonial
+${Testimonial_Link_Locator}                 //nav[@class='primary-menu']//span[text()='Write A Testimonial']
+${WriteATestimonial_Header_Locator}                 //h1[text()='Write A Testimonial']
+${Name_Textbox_Testimonial_Locator}          //input[@placeholder='Your name :*']
+${Email_Textbox_Testimonial_Locator}         //input[@placeholder='Email address: *']
+${Company_Textbox_Testimonial_Locator}       //input[@placeholder='Company Name: *']
+${Designation_Textbox_Testimonial_Locator}       //input[@placeholder='Designation : *']
+${Message_Textbox_Testimonial_Locator}        //textarea[@name='your-message']
+${Submit_Button_Testimonial_Locator}          //span[text()='Submit']
+${SentSuccess_Message_Testimonial_Locator}     //div[text()='Thank you for your message. It has been sent.' and @style='display: block;']
+
+## View Testimonial
+
+## Give your feedback
+${GiveFeedback_Link_Locator}                 //nav[@class='primary-menu']//span[text()='Give Your Feedback']
+${GiveFeedback_Header_Locator}                 //h1[text()='Give Your Feedback']
+${Name_Textbox_Feedback_Locator}          //input[@name='your-name']
+${Email_Textbox_Feedback_Locator}         //input[@name='your-email']
+${Message_Textbox_Feedback_Locator}        //textarea[@name='your-message']
+${Submit_Button_Feedback_Locator}          //span[text()='Submit']
+${SentSuccess_Message_Feedback_Locator}     //div[text()='Thank you for your message. It has been sent.' and @style='display: block;']
+
+## Contact Us
+${ContactUs_Header_Locator}                 //h1[text()='Contact us']
+
+
