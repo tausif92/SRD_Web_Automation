@@ -161,11 +161,11 @@ SRD_Web_22: Feedback - Write a Testimonial
     Validate Write A Testimonial Form
 
 #Pending
-SRD_Web_23: Feedback - View Testimonial
-    [Tags]   SRD_Web_23
-    Open Browser    ${URL}      ${BROWSER}
-    Maximize Browser Window
-    Validate Common Features
+#SRD_Web_23: Feedback - View Testimonial
+#    [Tags]   SRD_Web_23
+#    Open Browser    ${URL}      ${BROWSER}
+#    Maximize Browser Window
+#    Validate Common Features
 
 SRD_Web_24: Feedback - Give Your Feedback
     [Tags]   SRD_Web_24
