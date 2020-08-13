@@ -7,7 +7,7 @@ Validate Contact Us Page
     Run Keyword If    '${ContactUs_PageTitle}'=='${Title}'   Log To Console   PASSED :: "${Title}" page title is displayed correctly.   ELSE    Fail   FAILED :: Page title should be "${ContactUs_PageTitle}" but it was "${Title}".
     Validate Element    ${ContactUs_Header_Locator}   PASSED :: Header "Contact Us" is displayed.    FAILED :: Header "Contact Us" is not displayed.
     Validate Element    //h6[text()='${HeadOffice_Header_ContactUs}']    PASSED :: Header "${HeadOffice_Header_ContactUs}" is displayed in Contact Us page.    FAILED :: Header "${HeadOffice_Header_ContactUs}" is not displayed in Contact Us page.
-    Validate Content   ${HeadOffice_Value_ContactUs}   PASSED :: Head Office address is displayed correctly in Contact Us page.   FAILED :: Head Office address "${HeadOffice_Value}" is not displayed correctly in Contact Us page.
+    Validate Content   ${HeadOffice_Value_ContactUs}   PASSED :: Head Office address is displayed correctly in Contact Us page.   FAILED :: Head Office address "${HeadOffice_Value_ContactUs}" is not displayed correctly in Contact Us page.
     Validate Element   (//h6[text()='${Phone_Numbers_Header_ContactUs}'])[1]    PASSED :: Header "${Phone_Numbers_Header_ContactUs}" is displayed.    FAILED :: Header "${Phone_Numbers_Header_ContactUs}" is not displayed.
     Validate Content   ${Phone_Numbers_Value_ContactUs}   PASSED :: Phone number is displayed correctly in Contact Us page.   FAILED :: Phone number is not displayed correctly in Contact Us page.
     Validate Element    //h6[text()='${EmailAddress_Header_ContactUs}']    PASSED :: Header "${EmailAddress_Header_ContactUs}" is displayed in Contact Us page.    FAILED :: Header "${EmailAddress_Header_ContactUs}" is not displayed in Contact Us page.
@@ -17,8 +17,30 @@ Validate Contact Us Page
     Validate Element   //div[@class='vc_tta-tabs-container']//span[text()='Head Office :']    PASSED :: Head Office tab is displayed in Contact Us page.   FAILED :: Head Office tab not is displayed correctly in Contact Us page.
     Wait And Click     //div[@class='vc_tta-tabs-container']//span[text()='Head Office :']
     Sleep    1
+    Validate Element   (//h4[text()='SRD Logistics Pvt Ltd.'])[1]    PASSED :: Company name "SRD Logistics Pvt Ltd" is displayed in Head Office tab in Contact Us page.    FAILED :: Company name "SRD Logistics Pvt Ltd" is not displayed in Head Office tab in Contact Us page.
+    Validate Content   ${Address_HeadOffice}    PASSED :: Address is displayed in Head Office tab in Contact Us page.    FAILED :: Address "${Address_HeadOffice}" is not displayed in Head Office tab in Contact Us page.
+    Validate Content   ${Phone1_HeadOffice}    PASSED :: Phone no. is displayed in Head Office tab in Contact Us page.    FAILED :: Phone no. "${Phone1_HeadOffice}" is not displayed in Head Office tab in Contact Us page.
+    Validate Content   ${Phone2_HeadOffice}    PASSED :: Phone no. is displayed in Head Office tab in Contact Us page.    FAILED :: Phone no. "${Phone2_HeadOffice}" is not displayed in Head Office tab in Contact Us page.
+    Validate Content   ${Email_HeadOffice}    PASSED :: Email is displayed in Head Office tab in Contact Us page.    FAILED :: Email "${Email_HeadOffice}" is not displayed in Head Office tab in Contact Us page.
+    Validate Content   ${City_HeadOffice}    PASSED :: City is displayed in Head Office tab in Contact Us page.    FAILED :: City "${City_HeadOffice}" is not displayed in Head Office tab in Contact Us page.
 
+    Wait And Click     //div[@class='vc_tta-tabs-container']//span[text()='Regional Office :']
+    Sleep    1
+    Validate Element   (//h4[text()='SRD Logistics Pvt Ltd.'])[2]    PASSED :: Company name "SRD Logistics Pvt Ltd" is displayed in Regional Office tab in Contact Us page.    FAILED :: Company name "SRD Logistics Pvt Ltd" is not displayed in Regional Office tab in Contact Us page.
+    Validate Content   ${Address_RegionalOffice}    PASSED :: Address is displayed in Regional Office tab in Contact Us page.    FAILED :: Address "${Address_RegionalOffice}" is not displayed in Regional Office tab in Contact Us page.
+    Validate Content Contains   ${Phone1_RegionalOffice}    PASSED :: Phone no. is displayed in Regional Office tab in Contact Us page.    FAILED :: Phone no. "${Phone1_RegionalOffice}" is not displayed in Regional Office tab in Contact Us page.
+    Validate Content   ${Phone2_RegionalOffice}    PASSED :: Phone no. is displayed in Regional Office tab in Contact Us page.    FAILED :: Phone no. "${Phone2_RegionalOffice}" is not displayed in Regional Office tab in Contact Us page.
+    Validate Content   ${Email_RegionalOffice}    PASSED :: Email is displayed in Regional Office tab in Contact Us page.    FAILED :: Email "${Email_RegionalOffice}" is not displayed in Regional Office tab in Contact Us page.
+    Validate Content   ${City_RegionalOffice}    PASSED :: City is displayed in Regional Office tab in Contact Us page.    FAILED :: City "${City_RegionalOffice}" is not displayed in Regional Office tab in Contact Us page.
 
+    Wait And Click     //div[@class='vc_tta-tabs-container']//span[text()='Administrative Office :']
+    Sleep    1
+    Validate Element   (//h4[text()='SRD Logistics Pvt Ltd.'])[3]    PASSED :: Company name "SRD Logistics Pvt Ltd" is displayed in Administrative Office tab in Contact Us page.    FAILED :: Company name "SRD Logistics Pvt Ltd" is not displayed in Administrative Office tab in Contact Us page.
+    Validate Content   ${Address_AdministrativeOffice}    PASSED :: Address is displayed in Administrative Office tab in Contact Us page.    FAILED :: Address "${Address_AdministrativeOffice}" is not displayed in Administrative Office tab in Contact Us page.
+    Validate Content Contains   ${Phone1_AdministrativeOffice}    PASSED :: Phone no. is displayed in Administrative Office tab in Contact Us page.    FAILED :: Phone no. "${Phone1_AdministrativeOffice}" is not displayed in Administrative Office tab in Contact Us page.
+    Validate Content   ${Phone2_AdministrativeOffice}    PASSED :: Phone no. is displayed in Administrative Office tab in Contact Us page.    FAILED :: Phone no. "${Phone2_AdministrativeOffice}" is not displayed in Administrative Office tab in Contact Us page.
+    Validate Content   ${Email_AdministrativeOffice}    PASSED :: Email is displayed in Administrative Office tab in Contact Us page.    FAILED :: Email "${Email_AdministrativeOffice}" is not displayed in Administrative Office tab in Contact Us page.
+    Validate Content   ${City_AdministrativeOffice}    PASSED :: City is displayed in Administrative Office tab in Contact Us page.    FAILED :: City "${City_AdministrativeOffice}" is not displayed in Administrative Office tab in Contact Us page.
 
 Validate Give Your Feedback Form
     Mouse Over    ${Feedback_Link_Locator}

@@ -103,3 +103,4 @@ Resource            PageContents/JoinUs/WorkAtSRD.robot
 Resource            PageContents/TrackConsignment.robot
 Resource            PageContents/Feedback/WriteATestimonial.robot
 Resource            PageContents/Feedback/GiveFeedback.robot
+Resource            PageContents/ContactUs.robot
