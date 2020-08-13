@@ -238,6 +238,8 @@ Validate Locations
         ${Xpath}    Replace Variables    //h6/a[@title='${Location}']
         Validate Element    ${Xpath}    PASSED :: Location "${Location}" is displayed in ${Region} page.    FAILED :: Location "${Location}" is not displayed in ${Region} page.
         Sleep    1
+        ${TmpStatus}    Run Keyword And Return Status    Wait And Click      ${Xpath}
+        Run Keyword Unless    ${TmpStatus}    Scroll To Element   (//h6/../..)[${ScrollIndex}]    true
         Wait And Click      ${Xpath}
         Sleep    1
         Select Window       NEW

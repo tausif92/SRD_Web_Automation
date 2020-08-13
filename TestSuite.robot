@@ -175,7 +175,7 @@ SRD_Web_24: Feedback - Give Your Feedback
     Validate Give Your Feedback Form
 
 SRD_Web_25: Contact Us
-    [Tags]   SRD_Web_24
+    [Tags]   SRD_Web_25
     Open Browser    ${URL}      ${BROWSER}
     Maximize Browser Window
     Validate Common Features
