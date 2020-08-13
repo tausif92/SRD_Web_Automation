@@ -9,7 +9,7 @@ ${AddressDetails_Header_KASHMERE GATE}          Address Details
                                         ...     Delhi - 110 006.
 ${Phone_Numbers_Header_KASHMERE GATE}           Phone Numbers
 @{Phone_Numbers_Value_KASHMERE GATE}            Ph : (011) 2397 7758
-                                        ...     93130 70293 \ / \ 78272 58002
+                                        ...     93130 70293 / 78272 58002
 ${EmailAddress_Header_KASHMERE GATE}            E-mail Address
 ${EmailAddress_Value_KASHMERE GATE}             info@srdlogistics.com
 ${City_Header_KASHMERE GATE}                    City
