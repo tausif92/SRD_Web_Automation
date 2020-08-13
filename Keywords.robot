@@ -314,7 +314,7 @@ Compare Lists
 
 Validate Common Features
     Validate Element    ${Logo_Locator}    \nPASSED :: SRD Logo is displayed.    \nFAILED :: SRD Logo is not displayed.
-    Validate Content    ${Text_TollFreeNumber}    PASSED :: Toll free number "${Text_TollFreeNumber}" is displayed.   FAILED :: Toll free number "${Text_TollFreeNumber}" is not displayed.
+#    Validate Content    ${Text_TollFreeNumber}    PASSED :: Toll free number "${Text_TollFreeNumber}" is displayed.   FAILED :: Toll free number "${Text_TollFreeNumber}" is not displayed.
     Validate Content    ${Text_CinNo&TransportId}    PASSED :: CIN Number and Transporter Id is displayed.    FAILED :: CIN Number and Transporter Id is not displayed "${Text_CinNo&TransportId}".
     Validate Content    ${Chat_LeaveMessage}    PASSED :: Leave a message chat is displayed.    FAILED :: Leave a message chat is not displayed.
     Validate Element    ${Home_Link_Locator}    PASSED :: Home link is displayed.    FAILED :: Home link is displayed.
