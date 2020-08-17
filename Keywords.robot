@@ -171,7 +171,7 @@ Validate Work At SRD Page Form
     Wait And Input      ${Message_Textbox_WorkAtSRD_Locator}        ${Message_WorkAtSRD}
     Sleep    0.5
     Wait And Click      ${Submit_Button_WorkAtSRD_Locator}
-    Validate Element    ${SentSuccess_Message_WorkAtSRD_Locator}    PASSED :: Message for "Be a Franchisee" is successfully sent.    FAILED :: Message for "Be a Franchisee" is not sent.    30
+    Validate Element    ${SentSuccess_Message_WorkAtSRD_Locator}    PASSED :: Message and candidate details for "Work At SRD" is successfully sent.    FAILED :: Message and candidate details for "Work At SRD" is not sent.    30
 
 Validate Franchisee Page Form
     Mouse Over    ${JoinUs_Link_Locator}
