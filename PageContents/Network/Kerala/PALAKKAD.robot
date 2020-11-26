@@ -6,7 +6,7 @@ ${Name_Value_PALAKKAD}                       Mr. Vishamber
 ${AddressDetails_Header_PALAKKAD}            Address Details
 @{AddressDetails_Value_PALAKKAD}             Sub Station : ( Kanjikode , Mannarkad , Ottappalam , Pattambi, Vadakumchery, Koduvayur ) # 25 /632, 1 Gee Kay Building, Vithuni Road, Palakkad - 678014
 ${Phone_Numbers_Header_PALAKKAD}             Phone Numbers
-@{Phone_Numbers_Value_PALAKKAD}              Ph : (0491) 250 1858 / 94474 19985
+@{Phone_Numbers_Value_PALAKKAD}              (0491) 250 1858 / 94474 19985
 ${EmailAddress_Header_PALAKKAD}              E-mail Address
 ${EmailAddress_Value_PALAKKAD}               plkd@srdlogistics.com
 ${City_Header_PALAKKAD}                      City

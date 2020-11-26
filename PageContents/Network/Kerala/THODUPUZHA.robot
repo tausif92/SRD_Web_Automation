@@ -7,7 +7,7 @@ ${AddressDetails_Header_THODUPUZHA}            Address Details
 @{AddressDetails_Value_THODUPUZHA}             X/269, Near Head Post Office,
                                     ...     Thodupuzha - 685 584
 ${Phone_Numbers_Header_THODUPUZHA}             Phone Numbers
-@{Phone_Numbers_Value_THODUPUZHA}              Ph : 83049 04360
+@{Phone_Numbers_Value_THODUPUZHA}              83049 04360
 ${EmailAddress_Header_THODUPUZHA}              E-mail Address
 ${EmailAddress_Value_THODUPUZHA}               ktm@srdlogistics.com
 ${City_Header_THODUPUZHA}                      City

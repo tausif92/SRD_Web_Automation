@@ -4,10 +4,9 @@ ${PageTitle_KAILASH NAGAR}                      Kailash Nagar / Gandhi Nagar –
 ${Name_Header_KAILASH NAGAR}                    Name
 ${Name_Value_KAILASH NAGAR}                     MR.RAVINDER KUMAR
 ${AddressDetails_Header_KAILASH NAGAR}          Address Details
-@{AddressDetails_Value_KAILASH NAGAR}           Address: 9/101, Shyam Block, Kailash Nagar Delhi -110031.
+@{AddressDetails_Value_KAILASH NAGAR}           9/101, Shyam Block, Kailash Nagar Delhi -110031.
 ${Phone_Numbers_Header_KAILASH NAGAR}           Phone Numbers
-@{Phone_Numbers_Value_KAILASH NAGAR}            Ph : 92111 17915
-                                        ...     98109 85086
+@{Phone_Numbers_Value_KAILASH NAGAR}            92111 17915 / 98109 85086
 ${EmailAddress_Header_KAILASH NAGAR}            E-mail Address
 ${EmailAddress_Value_KAILASH NAGAR}             info@srdlogistics.com
 ${City_Header_KAILASH NAGAR}                    City

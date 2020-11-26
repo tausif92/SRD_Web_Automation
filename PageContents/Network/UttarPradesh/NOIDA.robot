@@ -4,9 +4,9 @@ ${PageTitle_NOIDA}                        NOIDA – SRD
 ${Name_Header_NOIDA}                      Name
 ${Name_Value_NOIDA}                       MR.D.K NAGPAL
 ${AddressDetails_Header_NOIDA}            Address Details
-@{AddressDetails_Value_NOIDA}             Address: F-118, Sec – 8, Ground Floor Noida – 201301.
+@{AddressDetails_Value_NOIDA}             F-118, Sec – 8, Ground Floor Noida – 201301.
 ${Phone_Numbers_Header_NOIDA}             Phone Numbers
-@{Phone_Numbers_Value_NOIDA}              P: (0120) 242 1311 / 2421464 / 93103 49196
+@{Phone_Numbers_Value_NOIDA}              (0120) 242 1311 / 2421464 / 93103 49196
 ${EmailAddress_Header_NOIDA}              E-mail Address
 ${EmailAddress_Value_NOIDA}               delhi@srdlogistics.com
 ${City_Header_NOIDA}                      City

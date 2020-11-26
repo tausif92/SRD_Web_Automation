@@ -4,12 +4,11 @@ ${PageTitle_KARNAL}                        Karnal – SRD
 ${Name_Header_KARNAL}                      Name
 ${Name_Value_KARNAL}                       MR.J.S RAWAT
 ${AddressDetails_Header_KARNAL}            Address Details
-@{AddressDetails_Value_KARNAL}             Address: Laxmi Transport Agency,
+@{AddressDetails_Value_KARNAL}             Laxmi Transport Agency,
                                     ...     Near Shiv Filling Station, G. T. Road,
                                     ...     Karnal - 132 001.
 ${Phone_Numbers_Header_KARNAL}             Phone Numbers
-@{Phone_Numbers_Value_KARNAL}              Ph : 92155 71056
-                                    ...     90504 02640
+@{Phone_Numbers_Value_KARNAL}              92155 71056 / 90504 02640
 ${EmailAddress_Header_KARNAL}              E-mail Address
 ${EmailAddress_Value_KARNAL}               delhi@srdlogistics.com
 ${City_Header_KARNAL}                      City

@@ -4,12 +4,11 @@ ${PageTitle_SHAHADARA}                          Shahadara – SRD
 ${Name_Header_SHAHADARA}                        Name
 ${Name_Value_SHAHADARA}                         MR.M.K SHARMA
 ${AddressDetails_Header_SHAHADARA}              Address Details
-@{AddressDetails_Value_SHAHADARA}               Address: 10/113, Subhash Gali Corner
+@{AddressDetails_Value_SHAHADARA}               10/113, Subhash Gali Corner
                                         ...     Main 60 Ft Road, Vishwas Nagar,
                                         ...     Shahadara, Delhi-110 032.
 ${Phone_Numbers_Header_SHAHADARA}               Phone Numbers
-@{Phone_Numbers_Value_SHAHADARA}                Ph : 79827 92525
-                                        ...     98104 83191
+@{Phone_Numbers_Value_SHAHADARA}                79827 92525 / 98104 83191
 ${EmailAddress_Header_SHAHADARA}                E-mail Address
 ${EmailAddress_Value_SHAHADARA}                 delhi@srdlogistics.com
 ${City_Header_SHAHADARA}                        City

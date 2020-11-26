@@ -4,12 +4,11 @@ ${PageTitle_PANIPAT}                        Panipat – SRD
 ${Name_Header_PANIPAT}                      Name
 ${Name_Value_PANIPAT}                       MR.AMIT KUMAR
 ${AddressDetails_Header_PANIPAT}            Address Details
-@{AddressDetails_Value_PANIPAT}             Address: 32-A, Swawan Park,
+@{AddressDetails_Value_PANIPAT}             32-A, Swawan Park,
                                     ...     Near New Model Town,
                                     ...     Panipat - 132 103.
 ${Phone_Numbers_Header_PANIPAT}             Phone Numbers
-@{Phone_Numbers_Value_PANIPAT}              Ph : 81683 64732
-                                    ...     98133 60471
+@{Phone_Numbers_Value_PANIPAT}              81683 64732 / 98133 60471
 ${EmailAddress_Header_PANIPAT}              E-mail Address
 ${EmailAddress_Value_PANIPAT}               delhi@srdlogistics.com
 ${City_Header_PANIPAT}                      City

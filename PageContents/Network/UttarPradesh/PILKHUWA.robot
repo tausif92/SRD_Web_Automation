@@ -4,9 +4,9 @@ ${PageTitle_PILKHUWA}                        Pilkhuwa – SRD
 ${Name_Header_PILKHUWA}                      Name
 ${Name_Value_PILKHUWA}                       Mr. Amit Singhal
 ${AddressDetails_Header_PILKHUWA}            Address Details
-@{AddressDetails_Value_PILKHUWA}             Address: Railway Road, Near Sarvodaya Inter College, Pilkhuwa – 245304
+@{AddressDetails_Value_PILKHUWA}             Railway Road, Near Sarvodaya Inter College, Pilkhuwa – 245304
 ${Phone_Numbers_Header_PILKHUWA}             Phone Numbers
-@{Phone_Numbers_Value_PILKHUWA}              P: 99270 73302
+@{Phone_Numbers_Value_PILKHUWA}              99270 73302
 ${EmailAddress_Header_PILKHUWA}              E-mail Address
 ${EmailAddress_Value_PILKHUWA}               delhi@srdlogistics.com
 ${City_Header_PILKHUWA}                      City

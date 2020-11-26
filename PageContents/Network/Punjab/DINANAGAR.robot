@@ -6,7 +6,7 @@ ${Name_Value_DINANAGAR}                       MR. RAJAN ARYA
 ${AddressDetails_Header_DINANAGAR}            Address Details
 @{AddressDetails_Value_DINANAGAR}             C/o Rajan G S Transport Opp. New Adarsh Industries G.T Road, Dinangar - 143531
 ${Phone_Numbers_Header_DINANAGAR}             Phone Numbers
-@{Phone_Numbers_Value_DINANAGAR}              Ph: 93564 10211 / 98141 79076
+@{Phone_Numbers_Value_DINANAGAR}              93564 10211 / 98141 79076
 ${EmailAddress_Header_DINANAGAR}              E-mail Address
 ${EmailAddress_Value_DINANAGAR}               delhi@srdlogistics.com
 ${City_Header_DINANAGAR}                      City

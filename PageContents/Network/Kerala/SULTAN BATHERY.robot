@@ -6,7 +6,7 @@ ${Name_Value_SULTAN BATHERY}                       MR.MUHAMMAD ALI / RASHID
 ${AddressDetails_Header_SULTAN BATHERY}            Address Details
 @{AddressDetails_Value_SULTAN BATHERY}             Sub Stations : ( Kalpetta, Manathavady, Panamaram, Meenangadi ) ST. Marys College Junction, Pulpallay Road, Kottakunnu, Sulthan Bathery - 673592.
 ${Phone_Numbers_Header_SULTAN BATHERY}             Phone Numbers
-@{Phone_Numbers_Value_SULTAN BATHERY}              P: 0493 - 6226229 / 9846150229
+@{Phone_Numbers_Value_SULTAN BATHERY}              0493 - 6226229 / 9846150229
 ${EmailAddress_Header_SULTAN BATHERY}              E-mail Address
 ${EmailAddress_Value_SULTAN BATHERY}               sbt@srdlogistics.in
 ${City_Header_SULTAN BATHERY}                      City

@@ -8,7 +8,7 @@ ${AddressDetails_Header_MADURAI}            Address Details
                                     ...     Melakkal Main Road, Kochdai,
                                     ...     Madurai - 625 016.
 ${Phone_Numbers_Header_MADURAI}             Phone Numbers
-@{Phone_Numbers_Value_MADURAI}              Ph : 76048 52324 /
+@{Phone_Numbers_Value_MADURAI}              76048 52324 /
                                     ...     95855 48678 / 95855 48674
 ${EmailAddress_Header_MADURAI}              E-mail Address
 ${EmailAddress_Value_MADURAI}               mdu@srdlogistics.com

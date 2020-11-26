@@ -7,7 +7,7 @@ ${AddressDetails_Header_Alleppey}            Address Details
 @{AddressDetails_Value_Alleppey}             Kuravanthode Junction,
                                     ...     P.O Punnapra, Allapuzha-688004.
 ${Phone_Numbers_Header_Alleppey}             Phone Numbers
-@{Phone_Numbers_Value_Alleppey}              Ph : (0477) 228 8882 / 94470 02641 / 94477 04010
+@{Phone_Numbers_Value_Alleppey}              (0477) 228 8882 / 94470 02641 / 94477 04010
 ${EmailAddress_Header_Alleppey}              E-mail Address
 ${EmailAddress_Value_Alleppey}               alp@srdlogistics.com
 ${City_Header_Alleppey}                      City

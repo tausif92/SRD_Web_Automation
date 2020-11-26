@@ -4,12 +4,11 @@ ${PageTitle_OPERA HOUSE}                        Opera House – SRD
 ${Name_Header_OPERA HOUSE}                      Name
 ${Name_Value_OPERA HOUSE}                       MR.ADHIK
 ${AddressDetails_Header_OPERA HOUSE}            Address Details
-@{AddressDetails_Value_OPERA HOUSE}             Address: 8/A, Mistry Bldg.,10-Padamji Road,
+@{AddressDetails_Value_OPERA HOUSE}             8/A, Mistry Bldg.,10-Padamji Road,
                                     ...     Opera House,
                                     ...     Mumbai - 400 007
 ${Phone_Numbers_Header_OPERA HOUSE}             Phone Numbers
-@{Phone_Numbers_Value_OPERA HOUSE}              Ph : (022) 2388 1135
-                                    ...     98927 84967
+@{Phone_Numbers_Value_OPERA HOUSE}              (022) 2388 1135 / 98927 84967
 ${EmailAddress_Header_OPERA HOUSE}              E-mail Address
 ${EmailAddress_Value_OPERA HOUSE}               info@srdlogistics.com
 ${City_Header_OPERA HOUSE}                      City

@@ -4,12 +4,12 @@ ${PageTitle_NANGLI POONA}                       NangliPoona – SRD
 ${Name_Header_NANGLI POONA}                     Name
 ${Name_Value_NANGLI POONA}                      Mr. Satyavan / Mr. Syed Salauddin
 ${AddressDetails_Header_NANGLI POONA}           Address Details
-@{AddressDetails_Value_NANGLI POONA}            Address: Khasra No. 53/9, Plot No.9,
+@{AddressDetails_Value_NANGLI POONA}            Khasra No. 53/9, Plot No.9,
                                         ...     Near Ashok Leyland Workshop,
                                         ...     Vill : Nangli Poona,
                                         ...     Delhi - 110 036.
 ${Phone_Numbers_Header_NANGLI POONA}            Phone Numbers
-@{Phone_Numbers_Value_NANGLI POONA}             Ph : (011) 2773 1542 / 43
+@{Phone_Numbers_Value_NANGLI POONA}             (011) 2773 1542 / 43
                                         ...     93110 50405 / 93118 18029
 ${EmailAddress_Header_NANGLI POONA}             E-mail Address
 ${EmailAddress_Value_NANGLI POONA}              nangli@srdlogistics.com

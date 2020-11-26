@@ -6,7 +6,7 @@ ${Name_Value_CALICUT}                       MR.KHALID
 ${AddressDetails_Header_CALICUT}            Address Details
 @{AddressDetails_Value_CALICUT}             Paraserry Building, Chalapuram Road, Puthiyapalam, Calicut - 673002
 ${Phone_Numbers_Header_CALICUT}             Phone Numbers
-@{Phone_Numbers_Value_CALICUT}              Ph : (0495) 270 1026 / 98957 63607
+@{Phone_Numbers_Value_CALICUT}              (0495) 270 1026 / 98957 63607
 ${EmailAddress_Header_CALICUT}              E-mail Address
 ${EmailAddress_Value_CALICUT}               clt@srdlogistics.com
 ${City_Header_CALICUT}                      City

@@ -8,7 +8,7 @@ ${AddressDetails_Header_DHEBAR ROAD}            Address Details
 @{AddressDetails_Value_DHEBAR ROAD}             80 Feet Road, Virani Aghat,
                                     ...     Rajkot - 360 004.
 ${Phone_Numbers_Header_DHEBAR ROAD}             Phone Numbers
-@{Phone_Numbers_Value_DHEBAR ROAD}              Ph : 91520 01557
+@{Phone_Numbers_Value_DHEBAR ROAD}              91520 01557
 ${EmailAddress_Header_DHEBAR ROAD}              E-mail Address
 ${EmailAddress_Value_DHEBAR ROAD}               info@srdlogistics.com
 ${City_Header_DHEBAR ROAD}                      City
@@ -24,7 +24,7 @@ ${AddressDetails_Header_METODA}            Address Details
 @{AddressDetails_Value_METODA}             Metoda G.I.D.C., Gate No.3,
                                     ...     Metoda, Rajkot - 360 021.
 ${Phone_Numbers_Header_METODA}             Phone Numbers
-@{Phone_Numbers_Value_METODA}              Ph : 91520 01558
+@{Phone_Numbers_Value_METODA}              91520 01558
 ${EmailAddress_Header_METODA}              E-mail Address
 ${EmailAddress_Value_METODA}               info@srdlogistics.com
 ${City_Header_METODA}                      City
@@ -41,7 +41,7 @@ ${AddressDetails_Header_SHAPAR}            Address Details
                                     ...     National highway 8-B,
                                     ...     Shapar, Rajkot - 360 024.
 ${Phone_Numbers_Header_SHAPAR}             Phone Numbers
-@{Phone_Numbers_Value_SHAPAR}              Ph : 91520 01562
+@{Phone_Numbers_Value_SHAPAR}              91520 01562
 ${EmailAddress_Header_SHAPAR}              E-mail Address
 ${EmailAddress_Value_SHAPAR}               info@srdlogistics.com
 ${City_Header_SHAPAR}                      City

@@ -6,7 +6,7 @@ ${Name_Value_KANNUR}                       MR.KUTTAN
 ${AddressDetails_Header_KANNUR}            Address Details
 @{AddressDetails_Value_KANNUR}             Sub Stations : ( Iritty , Kuthuparamba , Mattannur , Nileshwaram , Payyanur , Taliparamba ) CC/293, Thalikkavu Road, Kannur – 670001.
 ${Phone_Numbers_Header_KANNUR}             Phone Numbers
-@{Phone_Numbers_Value_KANNUR}              Ph : (0497) 270 1876 / 270 7948 / 98953 40420
+@{Phone_Numbers_Value_KANNUR}              (0497) 270 1876 / 270 7948 / 98953 40420
 ${EmailAddress_Header_KANNUR}              E-mail Address
 ${EmailAddress_Value_KANNUR}               knr@srdlogistics.com
 ${City_Header_KANNUR}                      City

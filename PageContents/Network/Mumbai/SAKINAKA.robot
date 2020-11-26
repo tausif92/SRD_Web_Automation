@@ -4,13 +4,12 @@ ${PageTitle_SAKINAKA}                        Sakinaka – SRD
 ${Name_Header_SAKINAKA}                      Name
 ${Name_Value_SAKINAKA}                       MR.NARESH
 ${AddressDetails_Header_SAKINAKA}            Address Details
-@{AddressDetails_Value_SAKINAKA}             Address: 2 & 3, Satya Nagar,
+@{AddressDetails_Value_SAKINAKA}             2 & 3, Satya Nagar,
                                     ...     Opp. Mustufa Market, 90 Feet Road,
                                     ...     Sakinaka, Andheri (E),
                                     ...     Mumbai - 400 072.
 ${Phone_Numbers_Header_SAKINAKA}             Phone Numbers
-@{Phone_Numbers_Value_SAKINAKA}              Ph : (022) 2852 8600
-                                    ...     70459 06571
+@{Phone_Numbers_Value_SAKINAKA}              (022) 2852 8600 / 70459 06571
 ${EmailAddress_Header_SAKINAKA}              E-mail Address
 ${EmailAddress_Value_SAKINAKA}               info@srdlogistics.com
 ${City_Header_SAKINAKA}                      City

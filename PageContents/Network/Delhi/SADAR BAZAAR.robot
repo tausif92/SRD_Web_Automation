@@ -4,12 +4,11 @@ ${PageTitle_SADAR BAZAAR}                       Sadar Bazar – SRD
 ${Name_Header_SADAR BAZAAR}                     Name
 ${Name_Value_SADAR BAZAAR}                      Mr. Amit Gupta
 ${AddressDetails_Header_SADAR BAZAAR}           Address Details
-@{AddressDetails_Value_SADAR BAZAAR}            Address: 4911, Phoota Road,
+@{AddressDetails_Value_SADAR BAZAAR}            4911, Phoota Road,
                                         ...     Near Westend Cinema ,
                                         ...     Sadar Bazar, Delhi - 110 006
 ${Phone_Numbers_Header_SADAR BAZAAR}            Phone Numbers
-@{Phone_Numbers_Value_SADAR BAZAAR}             Ph : (011) 2352 6460
-                                        ...     98118 07974
+@{Phone_Numbers_Value_SADAR BAZAAR}             (011) 2352 6460 / 98118 07974
 ${EmailAddress_Header_SADAR BAZAAR}             E-mail Address
 ${EmailAddress_Value_SADAR BAZAAR}              delhi@srdlogistics.com
 ${City_Header_SADAR BAZAAR}                     City

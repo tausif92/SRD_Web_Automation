@@ -8,7 +8,7 @@ ${AddressDetails_Header_PONDICHERRY}            Address Details
                                     ...     Rainbow Nagar,
                                     ...     Pondicherry - 605 011.
 ${Phone_Numbers_Header_PONDICHERRY}             Phone Numbers
-@{Phone_Numbers_Value_PONDICHERRY}              Ph : (0413) 221 2922 / 94439 58580 / 98940 29374
+@{Phone_Numbers_Value_PONDICHERRY}              (0413) 221 2922 / 94439 58580 / 98940 29374
 ${EmailAddress_Header_PONDICHERRY}              E-mail Address
 ${EmailAddress_Value_PONDICHERRY}                pondy@srdlogistics.com
 ${City_Header_PONDICHERRY}                      City

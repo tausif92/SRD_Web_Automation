@@ -4,11 +4,11 @@ ${PageTitle_DAYA BASTI}                     Daya Basti – SRD
 ${Name_Header_DAYA BASTI}                   Name
 ${Name_Value_DAYA BASTI}                    Mr. Nitin Katyal
 ${AddressDetails_Header_DAYA BASTI}         Address Details
-@{AddressDetails_Value_DAYA BASTI}          Address: 19/302, Basti Sarai Rohila,
+@{AddressDetails_Value_DAYA BASTI}          19/302, Basti Sarai Rohila,
                                     ...     Daya Basti,
                                     ...     Delhi - 110 035.
 ${Phone_Numbers_Header_DAYA BASTI}          Phone Numbers
-@{Phone_Numbers_Value_DAYA BASTI}           Ph : 93129 61430
+@{Phone_Numbers_Value_DAYA BASTI}           93129 61430
                                     ...     93113 63379 / 93503 26276
 ${EmailAddress_Header_DAYA BASTI}           E-mail Address
 ${EmailAddress_Value_DAYA BASTI}            info@srdlogistics.com

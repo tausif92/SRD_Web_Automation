@@ -6,7 +6,7 @@ ${Name_Value_KUNNAMKULAM}                       MR.SHIVAN
 ${AddressDetails_Header_KUNNAMKULAM}            Address Details
 @{AddressDetails_Value_KUNNAMKULAM}             Sub Stations : (Chavakkad, Guruvayoor, Edappal , Ponnani ) 10/145, Parampedam, Calicut Road, Near Chreu & Co., Kunnamkulam - 680503.
 ${Phone_Numbers_Header_KUNNAMKULAM}             Phone Numbers
-@{Phone_Numbers_Value_KUNNAMKULAM}              P: (04885) 221551 / 94463 21551
+@{Phone_Numbers_Value_KUNNAMKULAM}              (04885) 221551 / 94463 21551
 ${EmailAddress_Header_KUNNAMKULAM}              E-mail Address
 ${EmailAddress_Value_KUNNAMKULAM}               knklm@srdlogistics.com
 ${City_Header_KUNNAMKULAM}                      City

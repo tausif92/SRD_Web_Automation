@@ -4,11 +4,11 @@ ${PageTitle_MANGOL PURI}                        Mangol Puri – SRD
 ${Name_Header_MANGOL PURI}                      Name
 ${Name_Value_MANGOL PURI}                       Mr. Sorabh
 ${AddressDetails_Header_MANGOL PURI}            Address Details
-@{AddressDetails_Value_MANGOL PURI}             Address: B-7, Oil Mkt. Phase-I, Indl. Area,
+@{AddressDetails_Value_MANGOL PURI}             B-7, Oil Mkt. Phase-I, Indl. Area,
                                         ...     Mangol Puri, Nangloi No. 4,
                                         ...     Delhi - 110 083.
 ${Phone_Numbers_Header_MANGOL PURI}             Phone Numbers
-@{Phone_Numbers_Value_MANGOL PURI}              Ph : 98730 45456
+@{Phone_Numbers_Value_MANGOL PURI}              98730 45456
                                         ...     98112 86304
 ${EmailAddress_Header_MANGOL PURI}              E-mail Address
 ${EmailAddress_Value_MANGOL PURI}               info@srdlogistics.com

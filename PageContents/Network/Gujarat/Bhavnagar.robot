@@ -8,7 +8,7 @@ ${AddressDetails_Header_OLD BUNDER}            Address Details
 @{AddressDetails_Value_OLD BUNDER}             Opp. Meledi Maa Mandir,
                                     ...        Old Bunder Road, Bhavnagar - 364 001.
 ${Phone_Numbers_Header_OLD BUNDER}             Phone Numbers
-@{Phone_Numbers_Value_OLD BUNDER}              Ph : 91520 01554
+@{Phone_Numbers_Value_OLD BUNDER}              91520 01554
 ${EmailAddress_Header_OLD BUNDER}              E-mail Address
 ${EmailAddress_Value_OLD BUNDER}               info@srdlogistics.com
 ${City_Header_OLD BUNDER}                      City
@@ -24,7 +24,7 @@ ${AddressDetails_Header_ALANG}            Address Details
 @{AddressDetails_Value_ALANG}             Maruti Comlex, Ram Sarovar,
                                     ...     Alang, Bhavnagar - 364 081.
 ${Phone_Numbers_Header_ALANG}             Phone Numbers
-@{Phone_Numbers_Value_ALANG}              Ph : 91520 01556
+@{Phone_Numbers_Value_ALANG}              91520 01556
 ${EmailAddress_Header_ALANG}              E-mail Address
 ${EmailAddress_Value_ALANG}               info@srdlogistics.com
 ${City_Header_ALANG}                      City

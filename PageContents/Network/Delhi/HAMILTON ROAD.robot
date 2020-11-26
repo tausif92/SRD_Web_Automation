@@ -4,9 +4,9 @@ ${PageTitle_HAMILTON ROAD}                      Hamilton Road – SRD
 ${Name_Header_HAMILTON ROAD}                    Name
 ${Name_Value_HAMILTON ROAD}                     MR.ANIL KUMAR SHARMA
 ${AddressDetails_Header_HAMILTON ROAD}          Address Details
-@{AddressDetails_Value_HAMILTON ROAD}           Address: 607/2, Hamilton Road, Kashmere Gate, Delhi -110006.
+@{AddressDetails_Value_HAMILTON ROAD}           607/2, Hamilton Road, Kashmere Gate, Delhi -110006.
 ${Phone_Numbers_Header_HAMILTON ROAD}           Phone Numbers
-@{Phone_Numbers_Value_HAMILTON ROAD}            Ph : (011) 4560 3755
+@{Phone_Numbers_Value_HAMILTON ROAD}            (011) 4560 3755
                                         ...     92669 51239
 ${EmailAddress_Header_HAMILTON ROAD}            E-mail Address
 ${EmailAddress_Value_HAMILTON ROAD}             info@srdlogistics.com

@@ -6,7 +6,7 @@ ${Name_Value_AMRITSAR}                       MR.B.S PATHANIA
 ${AddressDetails_Header_AMRITSAR}            Address Details
 @{AddressDetails_Value_AMRITSAR}             \#65, Transport Nagar, Near Pathaka Market, Jahaj Garh, Amritsar - 143006.
 ${Phone_Numbers_Header_AMRITSAR}             Phone Numbers
-@{Phone_Numbers_Value_AMRITSAR}              Ph : 93560 37305 / 95013 87081
+@{Phone_Numbers_Value_AMRITSAR}              93560 37305 / 95013 87081
 ${EmailAddress_Header_AMRITSAR}              E-mail Address
 ${EmailAddress_Value_AMRITSAR}               delhi@srdlogistics.com
 ${City_Header_AMRITSAR}                      City

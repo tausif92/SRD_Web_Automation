@@ -4,10 +4,9 @@ ${PageTitle_New Lajpat Rai Market}                  Lajpat Rai Market – SRD
 ${Name_Header_New Lajpat Rai Market}                Name
 ${Name_Value_New Lajpat Rai Market}                 MR.K.K KHANNA
 ${AddressDetails_Header_New Lajpat Rai Market}      Address Details
-@{AddressDetails_Value_New Lajpat Rai Market}       Address: # 393, New Lajpat Rai Market, Delhi - 110006
+@{AddressDetails_Value_New Lajpat Rai Market}       \# 393, New Lajpat Rai Market, Delhi - 110006
 ${Phone_Numbers_Header_New Lajpat Rai Market}       Phone Numbers
-@{Phone_Numbers_Value_New Lajpat Rai Market}        Ph : (011) 2326 2617
-                                            ...     93118 81762
+@{Phone_Numbers_Value_New Lajpat Rai Market}        (011) 2326 2617 / 93118 81762
 ${EmailAddress_Header_New Lajpat Rai Market}        E-mail Address
 ${EmailAddress_Value_New Lajpat Rai Market}         delhi@srdlogistics.com
 ${City_Header_New Lajpat Rai Market}                City

@@ -6,7 +6,7 @@ ${Name_Value_Jagadhri}                       Mr. Sr.Parampal Singh
 ${AddressDetails_Header_Jagadhri}            Address Details
 @{AddressDetails_Value_Jagadhri}             A-6/22, Railway Road Jagadhari, Haryana- 135003
 ${Phone_Numbers_Header_Jagadhri}             Phone Numbers
-@{Phone_Numbers_Value_Jagadhri}              Phone Number: 9991600054 / 7876321821/ 9350592226
+@{Phone_Numbers_Value_Jagadhri}              9991600054 / 7876321821/ 9350592226
 ${EmailAddress_Header_Jagadhri}              E-mail Address
 ${EmailAddress_Value_Jagadhri}               delhi@srdlogistics.com
 ${City_Header_Jagadhri}                      City

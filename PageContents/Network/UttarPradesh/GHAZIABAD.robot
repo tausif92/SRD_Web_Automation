@@ -4,12 +4,11 @@ ${PageTitle_GHAZIABAD}                        Ghaziabad – SRD
 ${Name_Header_GHAZIABAD}                      Name
 ${Name_Value_GHAZIABAD}                       MR.K.L SONI
 ${AddressDetails_Header_GHAZIABAD}            Address Details
-@{AddressDetails_Value_GHAZIABAD}             Address: 367, Mukund Nagar,
+@{AddressDetails_Value_GHAZIABAD}            367, Mukund Nagar,
                                     ...     (Rainbow Compound)
                                     ...     Ghaziabad - 201 001.
 ${Phone_Numbers_Header_GHAZIABAD}             Phone Numbers
-@{Phone_Numbers_Value_GHAZIABAD}              Ph : 97112 64343
-                                    ...       98112 64343
+@{Phone_Numbers_Value_GHAZIABAD}              97112 64343 / 98112 64343
 ${EmailAddress_Header_GHAZIABAD}              E-mail Address
 ${EmailAddress_Value_GHAZIABAD}               delhi@srdlogistics.com
 ${City_Header_GHAZIABAD}                      City

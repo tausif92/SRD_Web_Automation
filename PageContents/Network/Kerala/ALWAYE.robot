@@ -8,7 +8,7 @@ ${AddressDetails_Header_ALWAYE}            Address Details
                                     ...     Uliyannoor.P.O,
                                     ...     Aluva 683108.
 ${Phone_Numbers_Header_ALWAYE}             Phone Numbers
-@{Phone_Numbers_Value_ALWAYE}              Phone : 9846021239, 9633192486,
+@{Phone_Numbers_Value_ALWAYE}              9846021239, 9633192486,
 ${EmailAddress_Header_ALWAYE}              E-mail Address
 ${EmailAddress_Value_ALWAYE}                ekm@srdlogistics.com
 ${City_Header_ALWAYE}                      City

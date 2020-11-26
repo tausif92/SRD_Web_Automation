@@ -4,10 +4,10 @@ ${PageTitle_AGRA}                        Agra – SRD
 ${Name_Header_AGRA}                      Name
 ${Name_Value_AGRA}                       MR.AMIT ARORA
 ${AddressDetails_Header_AGRA}            Address Details
-@{AddressDetails_Value_AGRA}             Address: 7/119, Tila Joshian, Moti
+@{AddressDetails_Value_AGRA}             7/119, Tila Joshian, Moti
                                     ...     Katra Road, Agra - 282 003.
 ${Phone_Numbers_Header_AGRA}             Phone Numbers
-@{Phone_Numbers_Value_AGRA}              P: 99978 75212
+@{Phone_Numbers_Value_AGRA}              99978 75212
 ${EmailAddress_Header_AGRA}              E-mail Address
 ${EmailAddress_Value_AGRA}               delhi@srdlogistics.com
 ${City_Header_AGRA}                      City

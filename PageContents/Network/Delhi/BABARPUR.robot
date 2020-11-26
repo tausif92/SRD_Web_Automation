@@ -4,11 +4,11 @@ ${PageTitle_BABARPUR}                       Babarpur – SRD
 ${Name_Header_BABARPUR}                     Name
 ${Name_Value_BABARPUR}                      MR.GAJINDER SINGH
 ${AddressDetails_Header_BABARPUR}           Address Details
-@{AddressDetails_Value_BABARPUR}            Address: 900-E, Rana Pratap Gali,
+@{AddressDetails_Value_BABARPUR}            900-E, Rana Pratap Gali,
                                     ...     Near Chajju Gate, Babarpur,
                                     ...     Delhi - 110 032.
 ${Phone_Numbers_Header_BABARPUR}            Phone Numbers
-@{Phone_Numbers_Value_BABARPUR}             Ph : (011) 2282 9399
+@{Phone_Numbers_Value_BABARPUR}             (011) 2282 9399
                                     ...     92121 34427
 ${EmailAddress_Header_BABARPUR}             E-mail Address
 ${EmailAddress_Value_BABARPUR}              delhi@srdlogistics.com

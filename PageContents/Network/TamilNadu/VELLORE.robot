@@ -7,7 +7,7 @@ ${AddressDetails_Header_VELLORE}            Address Details
 @{AddressDetails_Value_VELLORE}             10/3, Old Bypass Road, VVD Complex, Thotta Palayam,
                                     ...     Vellore - 632004.
 ${Phone_Numbers_Header_VELLORE}             Phone Numbers
-@{Phone_Numbers_Value_VELLORE}              Phone Number: 9159910076 / 8098512962
+@{Phone_Numbers_Value_VELLORE}              9159910076 / 8098512962
 ${EmailAddress_Header_VELLORE}              E-mail Address
 ${EmailAddress_Value_VELLORE}               vellore@srdlogistics.in
 ${City_Header_VELLORE}                      City

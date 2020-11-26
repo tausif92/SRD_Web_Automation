@@ -8,7 +8,7 @@ ${AddressDetails_Header_SALEM}            Address Details
                                     ...     Sankari Main Road, Nethimedu
                                     ...     Salem-636002.
 ${Phone_Numbers_Header_SALEM}             Phone Numbers
-@{Phone_Numbers_Value_SALEM}              Ph : (0427) 227 0229 / 97897 55383 / 95979 94994
+@{Phone_Numbers_Value_SALEM}              (0427) 227 0229 / 97897 55383 / 95979 94994
 ${EmailAddress_Header_SALEM}              E-mail Address
 ${EmailAddress_Value_SALEM}                slm@srdlogistics.com
 ${City_Header_SALEM}                      City

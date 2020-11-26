@@ -8,7 +8,7 @@ ${AddressDetails_Header_CHENNAI}            Address Details
                                     ...     Kondithope,
                                     ...     Chennai - 600 079.
 ${Phone_Numbers_Header_CHENNAI}             Phone Numbers
-@{Phone_Numbers_Value_CHENNAI}              Ph : (044) 2529 2723,
+@{Phone_Numbers_Value_CHENNAI}              (044) 2529 2723,
                                     ...     2529 2733
 ${EmailAddress_Header_CHENNAI}              E-mail Address
 ${EmailAddress_Value_CHENNAI}               chennai@srdlogistics.com

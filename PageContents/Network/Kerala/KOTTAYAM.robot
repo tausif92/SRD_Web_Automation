@@ -8,9 +8,9 @@ ${AddressDetails_Header_KOTTAYAM}            Address Details
                                     ...     M. L. Road,
                                     ...     Kottayam - 686 001.
 ${Phone_Numbers_Header_KOTTAYAM}             Phone Numbers
-@{Phone_Numbers_Value_KOTTAYAM}               P: (0481) 2304582 / 94471 44360
+@{Phone_Numbers_Value_KOTTAYAM}              (0481) 2304582 / 94471 44360
 ${EmailAddress_Header_KOTTAYAM}              E-mail Address
-${EmailAddress_Value_KOTTAYAM}                ktm@srdlogistics.com
+${EmailAddress_Value_KOTTAYAM}               ktm@srdlogistics.com
 ${City_Header_KOTTAYAM}                      City
 ${City_Value_KOTTAYAM}                       Kottayam
 @{Economy_KOTTAYAM}                          Rubber Industry

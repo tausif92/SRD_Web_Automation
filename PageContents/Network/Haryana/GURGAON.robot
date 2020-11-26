@@ -4,12 +4,11 @@ ${PageTitle_GURGAON}                        Gurgaon – SRD
 ${Name_Header_GURGAON}                      Name
 ${Name_Value_GURGAON}                       Mr. Sanjeev Sharma
 ${AddressDetails_Header_GURGAON}            Address Details
-@{AddressDetails_Value_GURGAON}             Address: Sumbandh Transport Co.,
+@{AddressDetails_Value_GURGAON}             Sumbandh Transport Co.,
                                     ...     Plot No. A-62, Near Krishna Mandir,
                                     ...     Rajindra Park, Gurgaon - 122 001
 ${Phone_Numbers_Header_GURGAON}             Phone Numbers
-@{Phone_Numbers_Value_GURGAON}              Ph : 85277 56246
-                                    ...     92104 86953
+@{Phone_Numbers_Value_GURGAON}              85277 56246 / 92104 86953
 ${EmailAddress_Header_GURGAON}              E-mail Address
 ${EmailAddress_Value_GURGAON}               delhi@srdlogistics.com
 ${City_Header_GURGAON}                      City

@@ -4,9 +4,9 @@ ${PageTitle_Vapi}                        Vapi – SRD
 ${Name_Header_Vapi}                      Name
 ${Name_Value_Vapi}                       Mr. Bhavesh
 ${AddressDetails_Header_Vapi}            Address Details
-@{AddressDetails_Value_Vapi}             Address: Plot No. 136/15 & 16, Godown No.10, Seema Packaging Compound, Near Seema Weigh Bridge, 2nd Phase, GIDC, VAPI – 396 210.
+@{AddressDetails_Value_Vapi}             Plot No. 136/15 & 16, Godown No.10, Seema Packaging Compound, Near Seema Weigh Bridge, 2nd Phase, GIDC, VAPI – 396 210.
 ${Phone_Numbers_Header_Vapi}             Phone Numbers
-@{Phone_Numbers_Value_Vapi}              P: 93761 74944 / 93778 09746
+@{Phone_Numbers_Value_Vapi}              93761 74944 / 93778 09746
 ${EmailAddress_Header_Vapi}              E-mail Address
 ${EmailAddress_Value_Vapi}               info@srdlogistics.com
 ${City_Header_Vapi}                      City

@@ -8,7 +8,7 @@ ${AddressDetails_Header_KOTTAKAL}            Address Details
                                     ...      Mallapuram District,
                                     ...      Kottakal - 676 503.
 ${Phone_Numbers_Header_KOTTAKAL}             Phone Numbers
-@{Phone_Numbers_Value_KOTTAKAL}              Ph : (0483) 2777 038 / 98461 50229
+@{Phone_Numbers_Value_KOTTAKAL}              (0483) 2777 038 / 98461 50229
 ${EmailAddress_Header_KOTTAKAL}              E-mail Address
 ${EmailAddress_Value_KOTTAKAL}               manj@srdlogistics.com
 ${City_Header_KOTTAKAL}                      City

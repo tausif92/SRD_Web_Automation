@@ -4,9 +4,9 @@ ${PageTitle_KAMLA MARKET}                       Kamla Market – SRD
 ${Name_Header_KAMLA MARKET}                     Name
 ${Name_Value_KAMLA MARKET}                      MR.ASHOK KUMAR
 ${AddressDetails_Header_KAMLA MARKET}           Address Details
-@{AddressDetails_Value_KAMLA MARKET}            Address: 266, Asaf Ali Road, Kamla Market, New Delhi – 110002
+@{AddressDetails_Value_KAMLA MARKET}            266, Asaf Ali Road, Kamla Market, New Delhi – 110002
 ${Phone_Numbers_Header_KAMLA MARKET}            Phone Numbers
-@{Phone_Numbers_Value_KAMLA MARKET}             P: (011) 23217338 / 98997 79389
+@{Phone_Numbers_Value_KAMLA MARKET}             (011) 23217338 / 98997 79389
 ${EmailAddress_Header_KAMLA MARKET}             E-mail Address
 ${EmailAddress_Value_KAMLA MARKET}              info@srdlogistics.com
 ${City_Header_KAMLA MARKET}                     City

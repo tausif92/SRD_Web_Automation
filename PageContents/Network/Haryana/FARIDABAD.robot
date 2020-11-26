@@ -7,8 +7,7 @@ ${AddressDetails_Header_FARIDABAD}            Address Details
 @{AddressDetails_Value_FARIDABAD}             18/5, Mathura Road,
                                     ...     Faridabad - 121 001.
 ${Phone_Numbers_Header_FARIDABAD}             Phone Numbers
-@{Phone_Numbers_Value_FARIDABAD}              Ph : 92121 15393
-                                    ...     96548 99925
+@{Phone_Numbers_Value_FARIDABAD}              92121 15393 / 96548 99925
 ${EmailAddress_Header_FARIDABAD}              E-mail Address
 ${EmailAddress_Value_FARIDABAD}               delhi@srdlogistics.com
 ${City_Header_FARIDABAD}                      City

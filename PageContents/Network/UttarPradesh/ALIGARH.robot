@@ -6,8 +6,7 @@ ${Name_Value_ALIGARH}                       MR.NAYEEM GHAFOOR
 ${AddressDetails_Header_ALIGARH}            Address Details
 @{AddressDetails_Value_ALIGARH}             13/9, Shah Kamal Road, Aligarh - 202001.
 ${Phone_Numbers_Header_ALIGARH}             Phone Numbers
-@{Phone_Numbers_Value_ALIGARH}              Ph : 70376 38342
-                                    ...     80777 50891
+@{Phone_Numbers_Value_ALIGARH}              70376 38342 / 80777 50891
 ${EmailAddress_Header_ALIGARH}              E-mail Address
 ${EmailAddress_Value_ALIGARH}               delhi@srdlogistics.com
 ${City_Header_ALIGARH}                      City

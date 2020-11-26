@@ -6,7 +6,7 @@ ${Name_Value_Daman}                       MR.BHAVESH
 ${AddressDetails_Header_Daman}            Address Details
 @{AddressDetails_Value_Daman}             Servey No. 747 / 748, Bajaj Compound, Near Nanadwana Transport Service, Daman - 396210.
 ${Phone_Numbers_Header_Daman}             Phone Numbers
-@{Phone_Numbers_Value_Daman}              Ph : 93761 74944 / 99258 85598
+@{Phone_Numbers_Value_Daman}              93761 74944 / 99258 85598
 ${EmailAddress_Header_Daman}              E-mail Address
 ${EmailAddress_Value_Daman}               info@srdlogistics.com
 ${City_Header_Daman}                      City

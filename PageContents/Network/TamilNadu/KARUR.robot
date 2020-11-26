@@ -8,7 +8,7 @@ ${AddressDetails_Header_KARUR}            Address Details
                                     ...     Near K.C.P. House,
                                     ...     Karur - 639 002
 ${Phone_Numbers_Header_KARUR}             Phone Numbers
-@{Phone_Numbers_Value_KARUR}              Ph : 95979 94994
+@{Phone_Numbers_Value_KARUR}              95979 94994
                                     ...     97897 55383
 ${EmailAddress_Header_KARUR}              E-mail Address
 ${EmailAddress_Value_KARUR}               slm@srdlogistics.com

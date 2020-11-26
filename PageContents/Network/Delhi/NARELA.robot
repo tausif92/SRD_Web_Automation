@@ -4,12 +4,11 @@ ${PageTitle_NARELA}                             Narela – SRD
 ${Name_Header_NARELA}                           Name
 ${Name_Value_NARELA}                            MR.KAPIL
 ${AddressDetails_Header_NARELA}                 Address Details
-@{AddressDetails_Value_NARELA}                  Address: Plot No.1, Pocket - 8,
+@{AddressDetails_Value_NARELA}                  Plot No.1, Pocket - 8,
                                         ...     B-4, Punjabi Colony,
                                         ...     Narela, Delhi - 110 040.
 ${Phone_Numbers_Header_NARELA}                  Phone Numbers
-@{Phone_Numbers_Value_NARELA}                   Ph : 93104 59547
-                                        ...     93103 59547
+@{Phone_Numbers_Value_NARELA}                   93104 59547 / 93103 59547
 ${EmailAddress_Header_NARELA}                   E-mail Address
 ${EmailAddress_Value_NARELA}                    delhi@srdlogistics.com
 ${City_Header_NARELA}                           City

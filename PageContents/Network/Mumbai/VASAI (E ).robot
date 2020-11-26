@@ -4,12 +4,12 @@ ${PageTitle_VASAI (E )}                        VASAI (E) – SRD
 ${Name_Header_VASAI (E )}                      Name
 ${Name_Value_VASAI (E )}                       MR.SANDEEP
 ${AddressDetails_Header_VASAI (E )}            Address Details
-@{AddressDetails_Value_VASAI (E )}             Address: B-1, Prasad Ind. Estate,
+@{AddressDetails_Value_VASAI (E )}             B-1, Prasad Ind. Estate,
                                     ...     Opp. Gaodevi Mandir,
                                     ...     Sativali, Vasai (E),
                                     ...     Palghar - 401 208.
 ${Phone_Numbers_Header_VASAI (E )}             Phone Numbers
-@{Phone_Numbers_Value_VASAI (E )}              Ph : 8329165663
+@{Phone_Numbers_Value_VASAI (E )}              8329165663
 ${EmailAddress_Header_VASAI (E )}              E-mail Address
 ${EmailAddress_Value_VASAI (E )}               info@srdlogistics.com
 ${City_Header_VASAI (E )}                      City

@@ -247,6 +247,8 @@ Validate Locations
     Validate Element    ${${Region}_Link_Locator}    PASSED :: ${Region} link is displayed in Network.    FAILED :: ${Region} link is not displayed in Network.
     Sleep    0.5
     Wait And Click      ${${Region}_Link_Locator}
+    Sleep    1
+    Select Window       NEW
     Validate Common Features
     ${Title}    Get Title
     Run Keyword If    '${${Region}_PageTitle}'=='${Title}'   Log To Console   PASSED :: ${Region} page title is displayed correctly.   ELSE    Fail   FAILED :: ${Region} page title should be "${${Region}_PageTitle}" but it was "${Title}".
@@ -263,7 +265,7 @@ Validate Locations
         ${TmpStatus}    Run Keyword And Return Status    Wait And Click      ${Xpath}
         Run Keyword Unless    ${TmpStatus}    Scroll To Element   (//h6/../..)[${ScrollIndex}]    true
         Run Keyword Unless    ${TmpStatus}    Wait And Click      ${Xpath}
-        Sleep    1
+        Sleep    2
         Select Window       NEW
         Validate Common Features
         ${Status}    Run Keyword And Return Status    Wait Until Element Is Visible   (//h6/a)[1]   1
@@ -291,15 +293,16 @@ Validate Sub Locations
         Sleep    1
         Wait And Click      ${Xpath}
         Sleep    1
-        Select Window       NEW
-        Validate Location Page   ${Location}   ${Region}
+#        Select Window       NEW
+        Validate Location Page   ${Location}   ${Region}    False
     END
     Close Window
     ${Wondows}        Get Window Handles
     Select Window       ${Wondows}[-1]
 
+
 Validate Location Page
-    [Arguments]   ${Location}   ${Region}
+    [Arguments]   ${Location}   ${Region}    ${CloseWindowFlag}=True
     Validate Common Features
     ${Title}   Get Title
     Run Keyword If    '${PageTitle_${Location}}'=='${Title}'   Log To Console   PASSED :: ${Region} >> ${Location} page title is displayed correctly.   ELSE    Fail   FAILED :: ${Region} >> ${Location} page title should be "${PageTitle_${Location}}" but it was "${Title}".
@@ -322,9 +325,9 @@ Validate Location Page
     ${CityEconomyContent}    Get Text    ${CityEconomy_Content_Locator}
     @{CityEconomyContent_List}   Split To Lines   ${CityEconomyContent}
     Compare Lists   ${CityEconomyContent_List}   ${Economy_${Location}}   PASSED :: Economy Of The City content is displayed correctly in ${Region} >> ${Location} page.   FAILED :: Economy Of The City content is not displayed correctly in ${Region} >> ${Location} page
-    Close Window
-    ${Wondows}        Get Window Handles
-    Select Window       ${Wondows}[-1]
+    Run Keyword If    ${CloseWindowFlag}    Close Window    ELSE    Go Back
+    ${Wondows}        Run Keyword If    ${CloseWindowFlag}    Get Window Handles
+    Run Keyword If    ${CloseWindowFlag}    Select Window       ${Wondows}[-1]
     ${i}   Run Keyword If    ${Status}   Set Variable    ${i}    ELSE    Evaluate   ${i}+1
     Set Test Variable    ${i}   ${i}
 
@@ -338,9 +341,9 @@ Compare Lists
 
 Validate Common Features
     Validate Element    ${Logo_Locator}    \nPASSED :: SRD Logo is displayed.    \nFAILED :: SRD Logo is not displayed.
-#    Validate Content    ${Text_TollFreeNumber}    PASSED :: Toll free number "${Text_TollFreeNumber}" is displayed.   FAILED :: Toll free number "${Text_TollFreeNumber}" is not displayed.
+    Validate Content    ${Text_TollFreeNumber}    PASSED :: Toll free number "${Text_TollFreeNumber}" is displayed.   FAILED :: Toll free number "${Text_TollFreeNumber}" is not displayed.
     Validate Content    ${Text_CinNo&TransportId}    PASSED :: CIN Number and Transporter Id is displayed.    FAILED :: CIN Number and Transporter Id is not displayed "${Text_CinNo&TransportId}".
-    Validate Content    ${Chat_LeaveMessage}    PASSED :: Leave a message chat is displayed.    FAILED :: Leave a message chat is not displayed.
+    Validate Element    ${Chat_LeaveMessage_Locator}    PASSED :: Whatsapp click to chat is displayed.    FAILED :: Whatsapp click to chat is not displayed.
     Validate Element    ${Home_Link_Locator}    PASSED :: Home link is displayed.    FAILED :: Home link is displayed.
     Validate Element    ${AboutUs_Link_Locator}    PASSED :: About Us link is displayed.    FAILED :: About Us link is displayed.
     Validate Element    ${Services_Link_Locator}    PASSED :: Services link is displayed.    FAILED :: Services link is displayed.

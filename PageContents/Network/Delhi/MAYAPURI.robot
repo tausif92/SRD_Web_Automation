@@ -4,10 +4,10 @@ ${PageTitle_MAYAPURI}                           Mayapuri – SRD
 ${Name_Header_MAYAPURI}                         Name
 ${Name_Value_MAYAPURI}                          MR.SANJEEV KUMAR
 ${AddressDetails_Header_MAYAPURI}               Address Details
-@{AddressDetails_Value_MAYAPURI}                Address: D-197, Mayapuri Phase - II,
+@{AddressDetails_Value_MAYAPURI}                D-197, Mayapuri Phase - II,
                                         ...     New Delhi - 110 064.
 ${Phone_Numbers_Header_MAYAPURI}                Phone Numbers
-@{Phone_Numbers_Value_MAYAPURI}                 P: 93119 81008 / 93103 48176
+@{Phone_Numbers_Value_MAYAPURI}                 93119 81008 / 93103 48176
 ${EmailAddress_Header_MAYAPURI}                 E-mail Address
 ${EmailAddress_Value_MAYAPURI}                  delhi@srdlogistics.com
 ${City_Header_MAYAPURI}                         City

@@ -4,11 +4,11 @@ ${PageTitle_BUDHPUR}                        Budhpur – SRD
 ${Name_Header_BUDHPUR}                      Name
 ${Name_Value_BUDHPUR}                       Mr. Deepak / Mr. Abdul Qadar
 ${AddressDetails_Header_BUDHPUR}            Address Details
-@{AddressDetails_Value_BUDHPUR}             Address: # 12/26-27, Budhpur, Alipur
+@{AddressDetails_Value_BUDHPUR}             \# 12/26-27, Budhpur, Alipur
                                     ...     Near Clouds Party Lawn,
                                     ...     Delhi - 110 036.
 ${Phone_Numbers_Header_BUDHPUR}             Phone Numbers
-@{Phone_Numbers_Value_BUDHPUR}              Ph : (011) 2720 4571 / 72
+@{Phone_Numbers_Value_BUDHPUR}              (011) 2720 4571 / 72
                                     ...     98912 40687 / 93133 79390
 ${EmailAddress_Header_BUDHPUR}              E-mail Address
 ${EmailAddress_Value_BUDHPUR}               siraspur@srdlogistics.com

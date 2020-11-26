@@ -4,11 +4,11 @@ ${PageTitle_KAROL BAGH}                         Karol Bagh – SRD
 ${Name_Header_KAROL BAGH}                       Name
 ${Name_Value_KAROL BAGH}                        Mr. Manzoor Ali
 ${AddressDetails_Header_KAROL BAGH}             Address Details
-@{AddressDetails_Value_KAROL BAGH}              Address: T-446, Faiz Road,
+@{AddressDetails_Value_KAROL BAGH}              T-446, Faiz Road,
                                         ...     Near Gurudwara, Karol Bagh,
                                         ...     New Delhi - 110 005.
 ${Phone_Numbers_Header_KAROL BAGH}              Phone Numbers
-@{Phone_Numbers_Value_KAROL BAGH}               Ph : (011) 6596 9222
+@{Phone_Numbers_Value_KAROL BAGH}               (011) 6596 9222
                                         ...     84476 41953 / 88607 71558
 ${EmailAddress_Header_KAROL BAGH}               E-mail Address
 ${EmailAddress_Value_KAROL BAGH}                info@srdlogistics.com

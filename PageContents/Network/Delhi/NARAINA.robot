@@ -4,12 +4,11 @@ ${PageTitle_NARAINA}                            Naraina – SRD
 ${Name_Header_NARAINA}                          Name
 ${Name_Value_NARAINA}                           Mr. Rahul Singhal
 ${AddressDetails_Header_NARAINA}                Address Details
-@{AddressDetails_Value_NARAINA}                 Address: CB-374/2, Indra Market,
+@{AddressDetails_Value_NARAINA}                 CB-374/2, Indra Market,
                                         ...     Ring Road, Naraina,
                                         ...     New Delhi - 110 028.
 ${Phone_Numbers_Header_NARAINA}                 Phone Numbers
-@{Phone_Numbers_Value_NARAINA}                  Ph : (011) 2577 8196
-                                        ...     98996 67536
+@{Phone_Numbers_Value_NARAINA}                  (011) 2577 8196 / 98996 67536
 ${EmailAddress_Header_NARAINA}                  E-mail Address
 ${EmailAddress_Value_NARAINA}                   delhi@srdlogistics.com
 ${City_Header_NARAINA}                          City

@@ -4,11 +4,10 @@ ${PageTitle_MEERUT}                        Meerut – SRD
 ${Name_Header_MEERUT}                      Name
 ${Name_Value_MEERUT}                       MR.NEERAJ SHARMA
 ${AddressDetails_Header_MEERUT}            Address Details
-@{AddressDetails_Value_MEERUT}             Address: 143-B, Transport Nagar,
+@{AddressDetails_Value_MEERUT}             143-B, Transport Nagar,
                                     ...     Meerut - 250 002.
 ${Phone_Numbers_Header_MEERUT}             Phone Numbers
-@{Phone_Numbers_Value_MEERUT}              Ph : 99979 08362
-                                    ...     93196 27361
+@{Phone_Numbers_Value_MEERUT}              99979 08362 / 93196 27361
 ${EmailAddress_Header_MEERUT}              E-mail Address
 ${EmailAddress_Value_MEERUT}               delhi@srdlogistics.com
 ${City_Header_MEERUT}                      City

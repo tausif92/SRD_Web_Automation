@@ -8,9 +8,9 @@ ${AddressDetails_Header_TIRUPUR}            Address Details
                                     ...     3rd West Street,
                                     ...     Tirupur - 641 602.
 ${Phone_Numbers_Header_TIRUPUR}             Phone Numbers
-@{Phone_Numbers_Value_TIRUPUR}              Ph : 88700 57355 / 97157 83906
+@{Phone_Numbers_Value_TIRUPUR}              88700 57355 / 97157 83906
 ${EmailAddress_Header_TIRUPUR}              E-mail Address
-${EmailAddress_Value_TIRUPUR}                trpr@srdlogistics.com
+${EmailAddress_Value_TIRUPUR}               trpr@srdlogistics.com
 ${City_Header_TIRUPUR}                      City
 ${City_Value_TIRUPUR}                       Tirupur
 @{Economy_TIRUPUR}                          Thiruppur is also known as the knitwear capital of India, accounting for 90% of India’s cotton knitwear export. It has spurred up the textile industry in India for the past three decades. It contributes to a huge amount of foreign exchange in India. In the Fiscal year 2013, exports were ₹17,500. The city provides employment to around 400,000 workers, with the average salary per worker being around ₹ 9,000 per month.

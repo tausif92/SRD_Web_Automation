@@ -6,7 +6,7 @@ ${Name_Value_Malerkotla}                       MR.PAWAN KUMAR GUPTA
 ${AddressDetails_Header_Malerkotla}            Address Details
 @{AddressDetails_Value_Malerkotla}             C/o. M/s. Pawan Roadlines, Loha Bazar, Malerkotla -148023
 ${Phone_Numbers_Header_Malerkotla}             Phone Numbers
-@{Phone_Numbers_Value_Malerkotla}              Ph : (01675)255 337
+@{Phone_Numbers_Value_Malerkotla}              (01675)255 337
                                     ...     98159 57585 / 90411 01520
 ${EmailAddress_Header_Malerkotla}              E-mail Address
 ${EmailAddress_Value_Malerkotla}               delhi@srdlogistics.com

@@ -4,12 +4,11 @@ ${PageTitle_SAMAIPUR BADLI}                     Samaipur Badli – SRD
 ${Name_Header_SAMAIPUR BADLI}                   Name
 ${Name_Value_SAMAIPUR BADLI}                    Mr. Nitesh Maan
 ${AddressDetails_Header_SAMAIPUR BADLI}         Address Details
-@{AddressDetails_Value_SAMAIPUR BADLI}          Address: 03, Plot No.8, Khasra No. 30/5, 66 Ft. Rd,
+@{AddressDetails_Value_SAMAIPUR BADLI}          03, Plot No.8, Khasra No. 30/5, 66 Ft. Rd,
                                         ...     Livaspur, Near Peer Baba Mazzar,
                                         ...     Delhi - 110 042.
 ${Phone_Numbers_Header_SAMAIPUR BADLI}          Phone Numbers
-@{Phone_Numbers_Value_SAMAIPUR BADLI}           Ph : 80104 10716
-                                        ...     92124 95503
+@{Phone_Numbers_Value_SAMAIPUR BADLI}           80104 10716 / 92124 95503
 ${EmailAddress_Header_SAMAIPUR BADLI}           E-mail Address
 ${EmailAddress_Value_SAMAIPUR BADLI}            delhi@srdlogistics.com
 ${City_Header_SAMAIPUR BADLI}                   City

@@ -4,9 +4,9 @@ ${PageTitle_Mangalore}                        Mangalore – SRD
 ${Name_Header_Mangalore}                      Name
 ${Name_Value_Mangalore}                       MR.RAMESH
 ${AddressDetails_Header_Mangalore}            Address Details
-@{AddressDetails_Value_Mangalore}             Address: # 9-21-738 / 1 , Lower Car Street, Mangalore - 575 001
+@{AddressDetails_Value_Mangalore}             \# 9-21-738 / 1 , Lower Car Street, Mangalore - 575 001
 ${Phone_Numbers_Header_Mangalore}             Phone Numbers
-@{Phone_Numbers_Value_Mangalore}              P: (0824) 244 7525 / 94474 36296
+@{Phone_Numbers_Value_Mangalore}              (0824) 244 7525 / 94474 36296
 ${EmailAddress_Header_Mangalore}              E-mail Address
 ${EmailAddress_Value_Mangalore}               mngl@srdlogistics.com
 ${City_Header_Mangalore}                      City
