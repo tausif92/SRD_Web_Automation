@@ -12,8 +12,9 @@ Validate Contact Us Page
     Validate Content   ${Phone_Numbers_Value_ContactUs}   PASSED :: Phone number is displayed correctly in Contact Us page.   FAILED :: Phone number is not displayed correctly in Contact Us page.
     Validate Element    //h6[text()='${EmailAddress_Header_ContactUs}']    PASSED :: Header "${EmailAddress_Header_ContactUs}" is displayed in Contact Us page.    FAILED :: Header "${EmailAddress_Header_ContactUs}" is not displayed in Contact Us page.
     Validate Content    ${EmailAddress_Value_ContactUs}   PASSED :: Email is displayed correctly in Contact Us page.   FAILED :: Email "${EmailAddress_Value_ContactUs}" is not displayed in Contact Us page.
-    Validate Element   (//h6[text()='${Phone_Numbers_Header_ContactUs}'])[2]    PASSED :: Header "${Phone_Numbers_Header_ContactUs}" is displayed.    FAILED :: Header "${Phone_Numbers_Header_ContactUs}" is not displayed.
-    Validate Content   ${Phone_Numbers_Value2_ContactUs}   PASSED :: Phone number is displayed correctly in Contact Us page.   FAILED :: Phone number is not displayed correctly in Contact Us page.
+    Validate Element    //h6[text()='${City_Header_ContactUs}']    PASSED :: Header "${City_Header_ContactUs}" is displayed in Contact Us page.    FAILED :: Header "${City_Header_ContactUs}" is not displayed in Contact Us page.
+    Validate Element    //p[text()='${City_Value_ContactUs}']      PASSED :: City "${City_Value_ContactUs}" is displayed correctly in Contact Us page.   FAILED :: City "${City_Value_ContactUs}" is not displayed in Contact Us page.
+
     Validate Element   //div[@class='vc_tta-tabs-container']//span[text()='Head Office :']    PASSED :: Head Office tab is displayed in Contact Us page.   FAILED :: Head Office tab not is displayed correctly in Contact Us page.
     Wait And Click     //div[@class='vc_tta-tabs-container']//span[text()='Head Office :']
     Sleep    1
@@ -261,7 +262,7 @@ Validate Locations
         Run Keyword If    ${i}%4==0 and ${i}!=0    Scroll To Element   (//h6/../..)[${ScrollIndex}]    true
         ${Xpath}    Replace Variables    //h6/a[@title='${Location}']
         Validate Element    ${Xpath}    PASSED :: Location "${Location}" is displayed in ${Region} page.    FAILED :: Location "${Location}" is not displayed in ${Region} page.
-        Sleep    1
+        Sleep    3
         ${TmpStatus}    Run Keyword And Return Status    Wait And Click      ${Xpath}
         Run Keyword Unless    ${TmpStatus}    Scroll To Element   (//h6/../..)[${ScrollIndex}]    true
         Run Keyword Unless    ${TmpStatus}    Wait And Click      ${Xpath}
@@ -319,7 +320,7 @@ Validate Location Page
     Compare Lists    ${PhoneValue_List}    ${Phone_Numbers_Value_${Location}}    PASSED :: Phone number is displayed correctly in ${Region} >> ${Location}.   FAILED :: Phone number is not displayed in ${Region} >> ${Location}
     Validate Element    //h6[text()='${EmailAddress_Header_${Location}}']    PASSED :: Header "${EmailAddress_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${EmailAddress_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
     Validate Content Contains    ${EmailAddress_Value_${Location}}   PASSED :: Email is displayed correctly in ${Region} >> ${Location} page.   FAILED :: Email "${EmailAddress_Value_${Location}}" is not displayed in ${Region} >> ${Location} page.
-    Validate Element    //h6[text()='${City_Header_${Location}}']    PASSED :: Header "${Name_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${Name_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
+    Validate Element    //h6[text()='${City_Header_${Location}}']    PASSED :: Header "${City_Header_${Location}}" is displayed in ${Region} >> ${Location} page.    FAILED :: Header "${City_Header_${Location}}" is not displayed in ${Region} >> ${Location} page.
     Validate Element    //p[contains(text(),'${City_Value_${Location}}')]   PASSED :: City "${City_Value_${Location}}" is displayed correctly in ${Region} >> ${Location} page.   FAILED :: City "${City_Value_${Location}}" is not displayed in ${Region} >> ${Location} page.
     Validate Element    ${CityEconomy_Header_Locator}    PASSED :: Header ECONOMY OF THE CITY is displayed in ${Region} >> ${Location} page.   FAILED :: Header ECONOMY OF THE CITY is not displayed in ${Region} >> ${Location} page.
     ${CityEconomyContent}    Get Text    ${CityEconomy_Content_Locator}

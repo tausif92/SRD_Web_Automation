@@ -5,10 +5,9 @@ ${Name_Header_COIMBATORE}                      Name
 ${Name_Value_COIMBATORE}                       MR.MAHENDRAN
 ${AddressDetails_Header_COIMBATORE}            Address Details
 @{AddressDetails_Value_COIMBATORE}             45/5, Veeraswamy School Street,
-                                    ...     Coimbatore - 641 001.
+                                        ...    Coimbatore - 641 001.
 ${Phone_Numbers_Header_COIMBATORE}             Phone Numbers
-@{Phone_Numbers_Value_COIMBATORE}              (0422) 230 6687,
-                                    ...     94421 21693
+@{Phone_Numbers_Value_COIMBATORE}              (0422) 230 6687 / 94421 21693
 ${EmailAddress_Header_COIMBATORE}              E-mail Address
 ${EmailAddress_Value_COIMBATORE}               cbe@srdlogistics.com
 ${City_Header_COIMBATORE}                      City

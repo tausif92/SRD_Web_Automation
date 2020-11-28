@@ -2,14 +2,12 @@
 ${Header_CHENNAI}                           Chennai
 ${PageTitle_CHENNAI}                        Chennai – SRD
 ${Name_Header_CHENNAI}                      Name
-${Name_Value_CHENNAI}                       Mr. Abdul Hakeem
+${Name_Value_CHENNAI}                       Mr. Tajauddin
 ${AddressDetails_Header_CHENNAI}            Address Details
-@{AddressDetails_Value_CHENNAI}             No.34/35, Walltax Road,
-                                    ...     Kondithope,
-                                    ...     Chennai - 600 079.
+@{AddressDetails_Value_CHENNAI}             No. 108- C, Grand Northern Truck Road,
+                                    ...     Madhavaram, Chennai - 600 110
 ${Phone_Numbers_Header_CHENNAI}             Phone Numbers
-@{Phone_Numbers_Value_CHENNAI}              (044) 2529 2723,
-                                    ...     2529 2733
+@{Phone_Numbers_Value_CHENNAI}              90920 57527
 ${EmailAddress_Header_CHENNAI}              E-mail Address
 ${EmailAddress_Value_CHENNAI}               chennai@srdlogistics.com
 ${City_Header_CHENNAI}                      City

@@ -5,10 +5,9 @@ ${Name_Header_ERODE}                      Name
 ${Name_Value_ERODE}                       Mr. S. Khan
 ${AddressDetails_Header_ERODE}            Address Details
 @{AddressDetails_Value_ERODE}             No.90, Park Road, Opp. Star Theatre,
-                                    ...     Erode - 638 003.
+                                    ...   Erode - 638 003.
 ${Phone_Numbers_Header_ERODE}             Phone Numbers
-@{Phone_Numbers_Value_ERODE}              95856 52067,
-                                    ...     91598 24642
+@{Phone_Numbers_Value_ERODE}              95856 52067 / 91598 24642
 ${EmailAddress_Header_ERODE}              E-mail Address
 ${EmailAddress_Value_ERODE}               erd@srdlogistics.com
 ${City_Header_ERODE}                      City

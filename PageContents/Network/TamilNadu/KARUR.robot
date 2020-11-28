@@ -5,11 +5,10 @@ ${Name_Header_KARUR}                      Name
 ${Name_Value_KARUR}                       Mr. Samad
 ${AddressDetails_Header_KARUR}            Address Details
 @{AddressDetails_Value_KARUR}             No. 3, Annanagar, 5th Cross,
-                                    ...     Near K.C.P. House,
-                                    ...     Karur - 639 002
+                                    ...   Near K.C.P. House,
+                                    ...   Karur - 639 002
 ${Phone_Numbers_Header_KARUR}             Phone Numbers
-@{Phone_Numbers_Value_KARUR}              95979 94994
-                                    ...     97897 55383
+@{Phone_Numbers_Value_KARUR}              95979 94994 / 97897 55383
 ${EmailAddress_Header_KARUR}              E-mail Address
 ${EmailAddress_Value_KARUR}               slm@srdlogistics.com
 ${City_Header_KARUR}                      City

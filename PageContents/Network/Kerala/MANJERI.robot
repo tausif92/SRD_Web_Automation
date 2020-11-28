@@ -4,7 +4,7 @@ ${PageTitle_MANJERI}                        Manjeri – SRD
 ${Name_Header_MANJERI}                      Name
 ${Name_Value_MANJERI}                       MR.K.P.MUSTAFA
 ${AddressDetails_Header_MANJERI}            Address Details
-@{AddressDetails_Value_MANJERI}             Sub Station : ( Aravangara, Chemmad, Mallapuram, Perintalmanna, Velluvambram ) Behind Malabar Hospital, JTS Road, Manjeri - 676121
+@{AddressDetails_Value_MANJERI}             Sub Station : ( Aravangara, Chemmad, Mallapuram, Perintalmanna, Velluvambram ) 49/29 A, Karuvambram West (PO) Via Manjeri - 676123
 ${Phone_Numbers_Header_MANJERI}             Phone Numbers
 @{Phone_Numbers_Value_MANJERI}              (0483) 276 0443 / 277 7038 / 98461 50229
 ${EmailAddress_Header_MANJERI}              E-mail Address
